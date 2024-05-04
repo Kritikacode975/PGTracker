@@ -1,0 +1,130 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Registraion</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">Registration</h2>
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+<!--         
+        <section class="login-page">
+            <div class="container">
+                <div class="login-page__info">
+                    <p>We have a demo account setup. <span>Username:</span> <a href="login.html">demo</a> and <span>
+                            Password:</span> <a href="login.html">demo</a></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="login-page__wrap">
+                            <h3 class="login-page_wrap_title">Login</h3>
+                            <form class="login-page__form">
+                                <div class="login-page__form-input-box">
+                                    <input type="email" placeholder="Username of email *">
+                                </div>
+                                <div class="login-page__form-input-box">
+                                    <input type="password" placeholder="Password *">
+                                </div>
+                                <div class="login-page__checked-box">
+                                    <input type="checkbox" name="save-data" id="save-data">
+                                    <label for="save-data"><span></span>Remember Me?</label>
+                                </div>
+                                <div class="login-page__form-btn-box">
+                                    <button type="submit" class="villoz-btn">
+                                        <i>Login</i>
+                                        <span>Login</span>
+                                    </button>
+                                    <div class="login-page__form-forgot-password">
+                                        <a href="login.html">Forgot your Passowrd?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+                            <section>
+                                <body>
+                            <form class="login-page__form" action="/client/reg/" method="post" align="center">
+                                <h3 align="center" style="font-size: 40px;"><u>Register Here!!</u></h3><br>
+                                {% csrf_token %}
+                                <table align="center" border="1" cellspacing="0" cellpadding="10"> <tr>
+                                    <td><label>Name:</label></td>
+                                    <td><input type="text" name="user_name" placeholder="Enter Name"></td>
+                                </tr>
+        
+                                    
+                                    <tr>
+                                        <td><label>Email:</label></td>
+                                        <td><input type="email" name="email" placeholder="Enter Email"></td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td><label>Password:</label></td>
+                                        <td><input type="password" name="password" placeholder="Enter Password"></td>
+                                    </tr>    
+                                
+                                                                
+                                    <tr>
+                                        <td><label>Number:</label></td>
+                                        <td><input type="number" name="contact" placeholder="Enter number"></td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td><label>Address:</label></td>
+                                        <td><input type="text" name="address" placeholder="Enter Address"></td>
+
+
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><label>Date Of Birth:</label></td>
+                                          <td><input type="date" name="dob" placeholder="Enter Date">
+                                            </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <input type="hidden" name="otp" value="0" placeholder="Enter Address">
+                                    </tr>
+                                
+                                    <tr>
+                                          <input type="hidden" name="is_admin" value="0" placeholder="Enter Address">
+                                    </tr>
+                                
+
+                                    <tr>
+                                    <td><label>Areas:</label></td>
+                                    <td><select name="area_id">
+                                        {% for data in a %}
+                                        <option value="">Select Area</option>
+                                        <option value="{{data.area_id}}">{{data.area_name}}</option>
+                                        {% endfor %}
+                                    </select></td>
+                                    </tr>
+                                  
+                                
+                                  <tr>
+                                      <td><input type="checkbox" name="accept-policy" id="accept-policy"></td>
+                                    <td><label for="accept-policy"><span></span>I accept company privacy policy.</label></td>
+                                  </tr>  
+                                    
+
+                                <div class="login-page__form-btn-box" style="margin-left:500px;">
+                                    <tr>
+                                        <td></td>
+                                        <td><button type="submit" class="villoz-btn">
+                                        <i>Register</i>
+                                        <span>Register</span>
+                                    </button></td>
+                                    </tr>
+                                    
+                                </div>
+                            </table>
+                            </form>
+        </body>
+        </section>
+        <!-- Login End -->
+{% endblock %}

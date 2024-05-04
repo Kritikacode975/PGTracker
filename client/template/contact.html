@@ -1,0 +1,108 @@
+
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                    <li><a href="/client/client_index">Home</a></li>
+                    <li><span>Get in Touch</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">Get in Touch</h2>
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="contact-one"><br>
+            <div class="container">
+                <div class="row gutter-y-60">
+                    <div class="col-md-12 col-lg-5 wow fadeInLeft" data-wow-duration="1500ms">
+                        <div class="contact-one__left">
+                            <ul class="list-unstyled contact-one__info">
+                                <li class="contact-one__info__item">
+                                    <div class="contact-one__info__icon">
+                                        <i class="icon-place"></i>
+                                    </div><!-- /.contact-one__info__icon -->
+                                    <div class="contact-one__info__content">
+                                        <p class="contact-one__info__text">Our Office</p> <!-- /.contact-one__info__text -->
+                                        <h4 class="contact-one__info__title"><a href="#">88 Broklyn Street Road
+                                                New York. USA</a></h4><!-- /.contact-one__info__title -->
+                                    </div><!-- /.contact-one__info__content -->
+                                </li>
+                                <li class="contact-one__info__item">
+                                    <div class="contact-one__info__icon">
+                                        <i class="icon-phone-call-1"></i>
+                                    </div><!-- /.contact-one__info__icon -->
+                                    <div class="contact-one__info__content">
+                                        <p class="contact-one__info__text">Call Team</p>
+                                        <!-- /.contact-one__info__text -->
+                                        <h4 class="contact-one__info__title"><a href="tel:+92(8800)-8960">+92 (8800) -
+                                                8960</a> <br>
+                                            <a href="tel:+6800-320-60">+6800-320-60</a>
+                                        </h4><!-- /.contact-one__info__title -->
+                                    </div><!-- /.contact-one__info__content -->
+                                </li>
+                                <li class="contact-one__info__item">
+                                    <div class="contact-one__info__icon">
+                                        <i class="icon-at"></i>
+                                    </div><!-- /.contact-one__info__icon -->
+                                    <div class="contact-one__info__content">
+                                        <p class="contact-one__info__text">Send Mail</p>
+                                        <!-- /.contact-one__info__text -->
+                                        <h4 class="contact-one__info__title"><a href="mailto:needhelp@company.com">needhelp@company.com</a> <br>
+                                            <a href="mailto:mail@villa.com">mail@villa.com</a>
+                                        </h4>
+                                        <!-- /.contact-one__info__title -->
+                                    </div><!-- /.contact-one__info__content -->
+                                </li>
+                            </ul><!-- /.list-unstyled -->
+                            <div class="contact-one__social">
+                                <div class="contact-one__social__title">Follow villoz</div><!-- /.contact-one__social__title -->
+                                <div class="contact-one__social__links">
+                                    
+                                </div><!-- /.contact-one__social__links -->
+                            </div><!-- /.contact-one__social -->
+                        </div><!-- /.contact-one__left -->
+                    </div><!-- /.col-md-12 col-lg-5 -->
+                    <div class="col-md-12 col-lg-7">
+                        <form class="contact-one__form form-one wow fadeInUp" data-wow-duration="1500ms" action="/client/contact/" method="post">
+                            {% csrf_token %}
+                            <div class="contact-one__form__top">
+                                <div class="sec-title text-start">
+
+                                    <h6 class="sec-title__tagline">Talk with the team</h6><!-- /.sec-title__tagline -->
+
+                                    <h3 class="sec-title__title">Any Questions? Feel Free <br> to Contact</h3><!-- /.sec-title__title -->
+                                </div><!-- /.sec-title -->
+                            </div><!-- /.contact-one__form__top -->
+                            <div class="form-one__group">
+                                <div class="form-one__control">
+                                    <input type="text" name="i_user_name" placeholder="Your name">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <input type="email" name="email" placeholder="Email address">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control">
+                                    <input type="number" name="contact" placeholder="PHone number">
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control form-one__control--full">
+                                    <textarea name="des" placeholder="Write  a message"></textarea><!-- /# -->
+                                </div><!-- /.form-one__control -->
+                                <div class="form-one__control form-one__control--full">
+                                    <button type="submit" class="villoz-btn">
+                                        <i>Send a Message</i>
+                                        <span>Send a Message</span>
+                                    </button>
+                                </div><!-- /.form-one__control -->
+                            </div><!-- /.form-one__group -->
+                        </form>
+                        <div class="result"></div><!-- /.result -->
+                    </div><!-- /.col-md-12 col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-one -->
+   </div><!-- /.page-wrapper -->
+
+{% endblock %}
+

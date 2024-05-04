@@ -1,0 +1,54 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>FEEDBACK ID</th>
+                            <th>USER_ID</th>
+                            <th>PG ID</th>
+                            <th>FEEDBACK_DATE</th>
+                            <th>DESCRIPTION</th>
+                            <th>RATING</th>
+                            <th>Action</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for data in f %}
+                          <tr>
+                        
+                            <td>{{data.f_id}}</td>
+                            <td>{{data.user_id.user_name}}</td>
+                            <td>{{data.pg_id.pg_name}}</td>
+                            <td>{{data.f_date}}</td>
+                            <td>{{data.des}}</td>
+                            <td>{{data.rating}}</td>
+                            <td><a href="/deleteFeedback/{{data.f_id}}">Delete</a></td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

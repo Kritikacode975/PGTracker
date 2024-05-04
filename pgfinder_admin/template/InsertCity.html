@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h4>Input Text</h4>
+              </div>
+              <form action="/insertcity/" method="post">
+                {% csrf_token %}
+              <div class="card-body">
+                <div class="form-group">
+                  <label>city name</label>
+                  <input type="text" name="city_name" class="form-control">
+                </div>
+                <button type="submit">Insert</button>
+              </form> 
+                
+                
+                
+                
+                
+                
+              </div>
+            </div> 
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
+{%  endblock %}

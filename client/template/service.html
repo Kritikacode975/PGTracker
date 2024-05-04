@@ -1,0 +1,294 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        <!-- main-banner-start -->
+
+   <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Products</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">Products Carousel</h2>
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="service-one">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <h3 class="sec-title__title">AMENITIES & SERVICES</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="service-one__carousel villoz-owl__carousel villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+         "items": 1,
+         "margin": 30,
+         "loop": false,
+         "smartSpeed": 700,
+         "nav": false,
+         "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+         "dots": true,
+         "autoplay": false,
+         "responsive": {
+            "0": {
+               "items": 1
+            },
+            "768": {
+               "items": 2
+            },
+            "992": {
+               "items": 3
+            },
+            "1300": {
+               "items": 4
+            }
+         }
+         }'>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-1.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Laundering</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="200ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-2.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">WiFi Connection</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="300ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-3.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Housekeeping</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="400ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-4.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Conditioning
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="video-two">
+            <div class="video-two__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(assets/images/backgrounds/video-bg-1-1.jpg);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="video-two__content wow fadeInLeft" data-wow-delay="100ms">
+                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <h3 class="video-two__sub-title">Are you ready to travel?</h3>
+                            <h3 class="video-two__title">Villoz is a World Leading<br> Online Villa Booking<br> Platform</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row gutter-y-10">
+                            <div class="col-md-6 text-center wow fadeInUp" data-wow-delay="100ms">
+                                <div class="video-two__box">
+                                    <div class="video-two__box__icon"><span class="icon-diamond"></span></div>
+                                    <h3 class="video-two__box__title">Luxury <br>Villas</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center wow fadeInUp" data-wow-delay="200ms">
+                                <div class="video-two__box">
+                                    <div class="video-two__box__icon"><span class="icon-guarantee"></span></div>
+                                    <h3 class="video-two__box__title">Trusted <br>Experience</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center wow fadeInUp" data-wow-delay="300ms">
+                                <div class="video-two__box">
+                                    <div class="video-two__box__icon"><span class="icon-room-service"></span></div>
+                                    <h3 class="video-two__box__title">Unparalleled <br>Service</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center wow fadeInUp" data-wow-delay="400ms">
+                                <div class="video-two__box">
+                                    <div class="video-two__box__icon"><span class="icon-secure-payment"></span></div>
+                                    <h3 class="video-two__box__title">Secure <br>Payments</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing-one">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">Our pricing plans</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Select a Plan According to <br>your Requirments</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <!-- section-title -->
+                <div class="pricing-one__main-tab-box tabs-box">
+                    <ul class="tab-buttons list-unstyled">
+                        <li data-tab="#monthly" class="tab-btn active-btn"><span>Monthly</span></li>
+                        <li data-tab="#yearly" class="tab-btn"><span>Yearly</span></li>
+                    </ul><!-- pricing-tab -->
+                    <div class="tabs-content">
+                        <!--month-tab-start-->
+                        <div class="tab active-tab" id="monthly">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="100ms">
+                                    <div class="pricing-one__item">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$30</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Standard Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa-1"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="200ms">
+                                    <div class="pricing-one__item active">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$60</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Quality Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="300ms">
+                                    <div class="pricing-one__item">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$90</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Luxury Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa-2"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                            </div>
+                        </div>
+                        <!--month-tab-end-->
+                        <!--yearly-tab-start-->
+                        <div class="tab" id="yearly">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="100ms">
+                                    <div class="pricing-one__item">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$130</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Standard Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa-1"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="200ms">
+                                    <div class="pricing-one__item active">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$260</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Quality Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                                <div class="col-lg-4 col-md-6 fadeInUp animated" data-wow-delay="300ms">
+                                    <div class="pricing-one__item">
+                                        <div class="pricing-one__item__inner">
+                                            <h3 class="pricing-one__item__price">$390</h3><!--pricing-item-price-->
+                                            <div class="pricing-one__item__name">Luxury Room</div><!--pricing-name-->
+                                            <div class="pricing-one__item__icon"><span class="icon-villa-2"></span></div><!--pricing-item-icon-->
+                                            <h5 class="pricing-one__item__list-title">All Services Include:</h5>
+                                            <ul class="pricing-one__item__list">
+                                                <li><span class="fa fa-check-circle"></span>10 Days Time</li>
+                                                <li><span class="fa fa-check-circle"></span>Interview Training</li>
+                                                <li><span class="fa fa-check-circle"></span>Guarantee Approval</li>
+                                                <li><span class="fa fa-check-circle"></span>Documents Submission</li>
+                                            </ul><!--pricing-item-list-->
+                                            <a href="contact.html" class="villoz-btn">
+                                                <i>Start Booking</i>
+                                                <span>Start Booking</span>
+                                            </a><!-- /.btn -->
+                                        </div>
+                                    </div><!--pricing-item-end-->
+                                </div><!--pricing-column-end-->
+                            </div>
+                        </div>
+                        <!--yearly-tab-end-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {%  endblock %}

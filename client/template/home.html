@@ -1,0 +1,704 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        <!-- main-banner-start -->
+        <section class="banner-one" style="background-image: url(assets/images/shapes/banner-1-1.jpg);">
+        </section>
+        <section class="banner-form wow fadeInUp" data-wow-delay="300ms">
+            <div class="banner-form__carousel villoz-owl__carousel owl-carousel owl-theme" data-owl-options='{
+		"items": 1,
+		"margin": 0,
+		"loop": true,
+		"smartSpeed": 700,
+		"animateOut": "fadeOut",
+		"autoplayTimeout": 5000, 
+		"nav": false,
+		"dots": false,
+		"autoplay": true
+		}'>
+                <div class="item">
+                    <div class="banner-form__image" style="background-image: url(/static/assets/img/home_pic.png);"></div>
+                </div>
+                {% comment %} <div class="item"> {% endcomment %}
+                    {% comment %} <div class="banner-form__image" style="background-image: url(/static/assets/img/home_pic.png);"></div> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+                {% comment %} <div class="item"> {% endcomment %}
+                    {% comment %} <div class="banner-form__image" style="background-image: url(static/assets/img/home_pic.png);"></div> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+            </div><!-- banner slider -->
+        </section>
+        <!-- main-banner-end -->
+        <section class="about-one">
+            <div class="about-one__shape villoz-splax" data-para-options='{"orientation": "left", "scale": 1.5, "delay": ".5", "transition": "cubic-bezier(0,0,0,1)", "overflow": true
+        }'><img src="{% static 'assets/images/resources/about-1-plan.png' %}" alt="villoz" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div>
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Welcome to Pg Finder</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">ABOUT US</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="about-one__content__map"></div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <div class="about-one__image-one">
+                                        <img src="{% static 'assets/img/about1.png' %}" alt="villoz">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <div class="about-one__content-inner">
+                                        <h5 class="about-one__content-inner__title">Welcome to PG FINDER!</h5>
+                                        <p class="about-one__content-inner__text">At PG FINDER, we understand the importance of finding a comfortable and safe living space away from home. Whether you're a student, a working professional, or someone new to the city, we strive to provide you with a home away from home experience.
+                                        </p>
+                                        <ul class="about-one__content-inner__list">
+                                            <li><span class="fa fa-check-circle"></span>Comfortable Living Spaces</li>
+                                            <li><span class="fa fa-check-circle"></span>Prime Locations</li>
+                                            <li><span class="fa fa-check-circle"></span>Safety and Security</li>
+                                            <li><span class="fa fa-check-circle"></span>Responsive Management</li>
+                                        </ul>
+                                        <a href="/client/about" class="villoz-btn">
+                                            <i>More About Us</i>
+                                            <span>More About Us</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.about__image -->
+                    </div><!-- /.col-lg-8 -->
+                    <div class="col-xl-4 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="about-one__right">
+                            <div class="about-one__circle">
+                                <div class="about-one__circle__icon"><span class="icon-best-seller"></span></div>
+                                <div class="curved-circle"><!-- curved-circle start-->
+                                    <div class="curved-circle--item" data-circle-text-options='{
+                                "radius": 95,
+                                "forceWidth": true,
+                                "forceHeight": true
+                            }'>Pg Finders Pg Finders pg Finders</div>
+                                </div><!-- curved-circle end-->
+                            </div><!-- /.about-circle -->
+                            <div class="about-one__image-two">
+                                <img src="{% static 'assets/img/about2.png' %}" alt="villoz">
+                            </div>
+                            <ul class="list-unstyled about-one__facts">
+                                <li class="about-one__facts__item count-box">
+                                    <div class="about-one__facts__icon"><span class="icon-villa-1"></span></div><!-- /.funfact-one__icon -->
+                                    <h3 class="about-one__facts__count count-text" data-stop="2270" data-speed="1500"></h3><!-- /.funfact-one__count -->
+                                    <p class="about-one__facts__text">PG'S on Rent</p><!-- /.funfact-one__text -->
+                                </li><!-- /.funfact-one__item -->
+                                <li class="about-one__facts__item count-box">
+                                    <div class="about-one__facts__icon"><span class="icon-map"></span></div><!-- /.funfact-one__icon -->
+                                    <h3 class="about-one__facts__count count-text" data-stop="289" data-speed="1500"></h3><!-- /.funfact-one__count -->
+                                    <p class="about-one__facts__text">Top Places</p><!-- /.funfact-one__text -->
+                                </li><!-- /.funfact-one__item -->
+                            </ul>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.about-one -->
+        <!-- Service Start -->
+        <section class="service-one">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <h3 class="sec-title__title">AMENITIES & SERVICES</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="service-one__carousel villoz-owl__carousel villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				},
+				"1300": {
+					"items": 4
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/img/service1.png' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                {% comment %} <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a> {% endcomment %}
+                                <h3 class="service-one__content__title">Laundering</h3>
+                                <p class="service-one__content__text">In many PG arrangements, residents share certain facilities with other occupants of the property.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="200ms">
+                            <div class="service-one__image">
+                                 <img src="{% static 'assets/img/service2.png' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                {% comment %} <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a> {% endcomment %}
+                                <h3 class="service-one__content__title">WiFi Connection</h3>
+                                <p class="service-one__content__text">In many PG arrangements, residents share certain facilities with other occupants of the property.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="300ms">
+                            <div class="service-one__image">
+                                 <img src="{% static 'assets/img/service3.png' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                {% comment %} <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a> {% endcomment %}
+                                <h3 class="service-one__content__title">Housekeeping</h3>
+                                <p class="service-one__content__text">In many PG arrangements, residents share certain facilities with other occupants of the property.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="400ms">
+                            <div class="service-one__image">
+                                 <img src="{% static 'assets/img/service4.png' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                {% comment %} <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a> {% endcomment %}
+                                <h3 class="service-one__content__title">Conditioning
+                                <p class="service-one__content__text">In many PG arrangements, residents share certain facilities with other occupants of the property.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+        <section class="villa-one" style="background-image: url(assets/images/shapes/villa-bg-1.jpg);">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">our PG'S for rent</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">See Our PG'S You’ll Love to<br>Book For Rent</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="villa-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="100ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/img/pg1.png' %}" alt="villoz">
+                                <span></span></a>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <h3 class="villa-card__title"><a href="villa-details.html">RK PG</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price">6500 <span class="villa-card__price__shift"></span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>Vastrapur, Ahmedabad</li>
+                                    {% comment %} <li><span class="icon-bath"></span>2 baths</li> {% endcomment %}
+                                    {% comment %} <li><span class="icon-users"></span>12 guests</li> {% endcomment %}
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                     <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="100ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/img/pg2.png' %}" alt="villoz">
+                                <span></span></a>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <h3 class="villa-card__title"><a href="villa-details.html">Shree PG</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price">5499 <span class="villa-card__price__shift"></span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>Paldi, Ahmedabad</li>
+                                    {% comment %} <li><span class="icon-bath"></span>2 baths</li> {% endcomment %}
+                                    {% comment %} <li><span class="icon-users"></span>12 guests</li> {% endcomment %}
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                     <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="100ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/img/pg3.png' %}" alt="villoz">
+                                <span></span></a>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <h3 class="villa-card__title"><a href="villa-details.html">Shiv PG</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price">10000 <span class="villa-card__price__shift"></span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>Bodakdev</li>
+                                    {% comment %} <li><span class="icon-bath"></span>2 baths</li> {% endcomment %}
+                                    {% comment %} <li><span class="icon-users"></span>12 guests</li> {% endcomment %}
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.villa-one -->
+        <section class="work-process-one" style="background-image: url(assets/images/shapes/work-process-bg-1.png);">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">our PG'S process</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">4 Easy Steps to Get the <br>Best PG'S</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="row gutter-y-30">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="work-process-one__item text-center">
+                            <div class="work-process-one__item__top">
+                                <div class="work-process-one__item__number"></div><!-- /.work-process-number -->
+                                <div class="work-process-one__item__icon"><span class="icon-search"></span></div><!-- /.work-process-icon -->
+                            </div><!-- /.work-process-image -->
+                            <div class="work-process-one__item__content">
+                                <h4 class="work-process-one__item__title">Search<br> Destinations</h4><!-- /.work-process-title -->
+                                <p class="work-process-one__item__text">
+                                    Creating a paying guest (PG) project involves developing a system that facilitates the management of accommodations for individuals who seek temporary housing, typically students or professionals. 
+                                </p><!-- /.work-process-text -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="work-process-one__item text-center">
+                            <div class="work-process-one__item__top">
+                                <div class="work-process-one__item__number"></div><!-- /.work-process-number -->
+                                <div class="work-process-one__item__icon"><span class="icon-tap"></span></div><!-- /.work-process-icon -->
+                            </div><!-- /.work-process-image -->
+                            <div class="work-process-one__item__content">
+                                <h4 class="work-process-one__item__title">Select Your<br> PG</h4><!-- /.work-process-title -->
+                                <p class="work-process-one__item__text">
+                                    Creating a paying guest (PG) project involves developing a system that facilitates the management of accommodations for individuals who seek temporary housing, typically students or professionals. 
+                                </p><!-- /.work-process-text -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="work-process-one__item text-center">
+                            <div class="work-process-one__item__top">
+                                <div class="work-process-one__item__number"></div><!-- /.work-process-number -->
+                                <div class="work-process-one__item__icon"><span class="icon-appointment"></span></div><!-- /.work-process-icon -->
+                            </div><!-- /.work-process-image -->
+                            <div class="work-process-one__item__content">
+                                <h4 class="work-process-one__item__title">Book<br> PG Online</h4><!-- /.work-process-title -->
+                                <p class="work-process-one__item__text">
+                                    Creating a paying guest (PG) project involves developing a system that facilitates the management of accommodations for individuals who seek temporary housing, typically students or professionals. 
+                                </p><!-- /.work-process-text -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="work-process-one__item text-center">
+                            <div class="work-process-one__item__top">
+                                <div class="work-process-one__item__number"></div><!-- /.work-process-number -->
+                                <div class="work-process-one__item__icon"><span class="icon-sun-umbrella"></span></div><!-- /.work-process-icon -->
+                            </div><!-- /.work-process-image -->
+                            <div class="work-process-one__item__content">
+                                <h4 class="work-process-one__item__title">Get<br> Your Pg</h4><!-- /.work-process-title -->
+                                <p class="work-process-one__item__text">
+                                   Creating a paying guest (PG) project involves developing a system that facilitates the management of accommodations for individuals who seek temporary housing, typically students or professionals. 
+                                </p><!-- /.work-process-text -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.work-process-one -->
+        <section class="testimonials-one" style="background-image: url(assets/images/backgrounds/testimonial-bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonials-one__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Guest's Reviews</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">What Our Guests Saying?</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <p class="testimonials-one__content__text">Trust Score 4.5 (Based on 1500 Reviews)</p>
+                            <div class="testimonials-one__carousel-dots"></div><!-- /.testimonials-custome-dots -->
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="testimonials-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow owl-carousel" data-owl-options='{
+					"items": 1,
+					"margin": 30,
+					"loop": false,
+					"smartSpeed": 700,
+					"nav": false,
+					"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+					"dots": true,
+					"dotsContainer": ".testimonials-one__carousel-dots",
+					"autoplay": false,
+					"responsive": {
+						"0": {
+							"items": 1
+						},
+						"768": {
+							"items": 2
+						}
+					}
+					}'>
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-1.jpg' %}" alt="Mike Hardson">
+                                        <h3 class="testimonials-card__name">
+                                            Mike Hardson
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">CEO - Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-2.jpg' %}" alt="Alesha Brown">
+                                        <h3 class="testimonials-card__name">
+                                            Alesha Brown
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-3.jpg' %}" alt="Kevin Martin">
+                                        <h3 class="testimonials-card__name">
+                                            Kevin Martin
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Developer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-4.jpg' %}" alt="Mark Smith">
+                                        <h3 class="testimonials-card__name">
+                                            Mark Smith
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Reviwer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-1.jpg' %}" alt="Mike Hardson">
+                                        <h3 class="testimonials-card__name">
+                                            Mike Hardson
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">CEO - Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-2.jpg' %}" alt="Alesha Brown">
+                                        <h3 class="testimonials-card__name">
+                                            Alesha Brown
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-3.jpg' %}" alt="Kevin Martin">
+                                        <h3 class="testimonials-card__name">
+                                            Kevin Martin
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Developer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        "The paying guest project streamlines accommodation booking and payment processes for seamless user experience."
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-4.jpg' %}" alt="Mark Smith">
+                                        <h3 class="testimonials-card__name">
+                                            Mark Smith
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Reviwer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                        </div><!-- /.testimonials-one__carousel -->
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+        <section class="gallery-one gallery-one--home-one">
+            <div class="container">
+                <div class="gallery-one__carousel villoz-owl__carousel  villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 5,
+			"margin": 20,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": false,
+			"autoplay": true,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"576": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				},
+				"1200": {
+					"items": 4
+				},
+				"1500": {
+					"items": 5
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/img/room1.png' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                     <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/img/room2.png' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                     <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/img/room3.png' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                     <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/img/room4.png' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    
+                </div><!-- /.gallery-one__carousel -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.gallery-one -->
+        <section class="blog-one">
+            <div class="container">
+                <div class="sec-title text-center">
+
+
+                    <h3 class="sec-title__title">Our Latest PG'S <br>In Different States</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="blog-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/img/latest1.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <img src="{% static 'assets/img/latest1.png' %}"  alt="10 advantages of staying in a luxury villa">
+                                <img src="{% static 'assets/img/latest1.png' %}"  alt="10 advantages of staying in a luxury villa">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">10 advantages of staying in a luxury villa</span>
+                                    <!-- /.sr-only --></a>
+                                <!-- /.blog-card__date -->
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">10 advantages of staying in a PG</a></h3><!-- /.blog-card__title --><p>Affordability <br> Shared Expenses <br> Furnished Rooms <br> Flexibility <br> Amenities <br> Location <br> Safety and Security <br> Minimal Responsibilities <br> Social Opportunities <br></p>
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/img/latest2.png' %}" alt="Live a balanced life in a premium villa">
+                               <img src="{% static 'assets/img/latest2.png' %}" alt="Live a balanced life in a premium villa">
+                                <img src="{% static 'assets/img/latest2.png' %}" alt="Live a balanced life in a premium villa">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Live a balanced life in a PG</span>
+                                    <!-- /.sr-only --></a>
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">Live a balanced life in a PG</a></h3><!-- /.blog-card__title --><p>Establish a Routine <br> Prioritize Self-Care <br> Maintain Healthy Habits <br> Manage Finances Wisely <br> Stay Organized <br> Set Boundaries <br> Engage in Community Activities <br> Stay Connected with Family and Friends <br> </p>
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/img/latest3.png' %}" alt="10 advantages of staying in a luxury villa">
+                                 <img src="{% static 'assets/img/latest3.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <img src="{% static 'assets/images/blog/blog-1-1.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">10 advantages of staying in a PG</span>
+                                    <!-- /.sr-only --></a>
+                                <!-- /.blog-card__date -->
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">10 advantages of staying in a PG</a></h3><!-- /.blog-card__title --><p>Affordability <br> Shared Expenses <br> Furnished Rooms <br> Flexibility <br> Amenities <br> Location <br> Safety and Security <br> Minimal Responsibilities <br> Social Opportunities <br></p>
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-one -->
+
+        {%  endblock %}

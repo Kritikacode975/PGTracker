@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+
+{% load mathfilters %}
+
+        <section class="page-header page-header--blank">
+         <div class="page-header__bg"></div>
+          <!-- /.page-header__bg -->
+      </section><!-- /.page-header -->
+      <section class="cart-page">
+        <div class="card-body">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+      <thead>
+        <tr>
+          <th>BOOKING ID</th>
+          <th>PG NAME</th>
+          <th>BOOKING DATE</th>
+          <th>STATUS</th>
+          <th>PAYMENT_STATUS</th>
+          <th>PAYMENT_AMOUNT</th>
+          <th>ACTION</th>
+         
+        </tr>
+      </thead>
+      <tbody id="load_data">
+    {% for val in my %}
+        <tr>
+          <td>{{val.b_id}} </td>
+          <td>{{val.pg_room_id.pg_id.pg_name}}</td>
+          <td>{{val.b_date}} </td>
+          <td>
+            {% if val.status == 0 %}
+              Pending
+            {% elif val.status == 1 %}
+              Accepted
+            {% else %}
+              Rejected
+            {% endif %}
+          </td>
+          <td>
+            {%  if  val.payment_status == 0 %}
+              Pending
+            {% elif val.payment_status == 1 %}
+              Paid
+            {% endif %}
+          </td>
+          <td>{{val.payment_amount}} Rs</td>
+          {% if val.status == 1  and val.payment_status == 0 %}
+          <td>
+            <div id="order" >
+              <form class="text-center border border-light p-5" action="/client/placeorder/"
+                method="POST">
+                {% csrf_token %}
+                 <input type="hidden" name="name" id="name" required class="form-control mb-4"
+                placeholder="Name">
+                <!-- RAZORPAY INTEGRATION HERE -->
+                <script src="https://checkout.razorpay.com/v1/checkout.js"
+                data-key="rzp_test_i6Ng4npHTiTosZ"
+                data-amount="{{val.payment_amount|mul:100}}"
+                data-currency="INR"
+                data-order_id="{{payment.id}}"
+                data-buttontext="Pay with Razorpay"
+                data-name="PG FINDER"
+                data-url_root="https://eneqd3r9zrjok.x.pipedream.net/"
+                data-description="Online Booking"
+                data-image="{% static 'pvr_img/Pvr_logo.png' %}"
+                data-theme.color="#F37254">
+              </script>
+              </form>
+            </div>
+          </td>
+          {% endif %}
+        </tr>
+    {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+    </section>
+
+{% endblock %}

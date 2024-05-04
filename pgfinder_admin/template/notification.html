@@ -1,0 +1,50 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>NOTIFICATION ID</th>
+                            <th>USER ID</th>
+                            <th>DESCRIPTION</th>
+                            <th>NOTIFICATION DATE</th>
+                            <th>Action</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for data in n %}
+                          <tr>
+                            <td>{{data.n_id}}</td>
+                            <td>{{data.user_id.user_name}}</td>
+                            <td>{{data.des}}</td>
+                            <td>{{data.n_date}}</td>
+                            <td><a href="/deleteNotification/{{data.n_id}}">Delete</a></td>
+                            
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

@@ -1,0 +1,61 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>PG ID</th>
+                            <th>PG NAME</th>
+                            <th>Email</th>
+                            {% comment %} <th>Password</th> {% endcomment %}
+                            <th>Location</th>
+                            <th>Area Id</th>
+                            <th>Area_rating</th>
+                            <th>Avg_rating</th>
+                            <th>Description</th>
+                            <th>Action</th>
+
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for data in p %}
+                          <tr>
+                        
+                            <td>{{data.pg_id}}</td>
+                            <td>{{data.pg_name}}</td>
+                            <td>{{data.email}}</td>
+                            {% comment %} <td>{{data.password}}</td> {% endcomment %}
+                            <td>{{data.location}}</td>
+                            <td>{{data.area_id.area_name}}</td>
+                            <td>{{data.area_rating}}</td>
+                            <td>{{data.avg_rating}}</td>
+                            <td>{{data.des}}</td>
+                            <td><a href="/deletePGowner/{{data.pg_id}}">Delete</a></td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

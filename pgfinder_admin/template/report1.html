@@ -1,0 +1,33 @@
+{% load static %}
+
+  {% for val in booking %}
+                          <tr>
+                            <td>{{val.b_id}} </td>
+                            <td>{{val.user_name}}</td>
+                            <td>{{val.b_date}} </td>
+                            <td>
+                                {%  if  val.payment_status == '0' %}
+                                    Pending
+                                {% elif val.payment_status == '1' %}
+                                  Cash
+                                {% elif val.payment_status == '2' %}
+                                  Online
+                                {% endif %}
+
+                            </td>
+                            <td>
+                              {% if val.status == '0' %}
+                                Pending
+                              {% elif val.status == '1' %}
+                                Accepted
+                              {% else %}
+                                Rejected
+                              {% endif %}
+
+                            </td>
+                            <td>{{val.payment_amount}} Rs</td>
+
+                            <td><a href="/boking/{{val.b_id}}/">ViewDetail</a>
+                            </td>
+                          </tr>
+{% endfor %}

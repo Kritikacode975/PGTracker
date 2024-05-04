@@ -1,0 +1,60 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>BOOKING ID</th>
+                            <th>USER_ID</th>
+                            <th>PG ROOM ID</th>
+                            <th>STATUS</th>
+                            <th>PAYMENT_STATUS</th>
+                            <th>PAYMENT_AMOUNT</th>
+                          </tr>
+                        </thead>
+                          <tbody>
+                          {% for data in b %}
+                          <tr>
+                        
+                            <td>{{data.b_id}}</td>
+                            <td>{{data.user_id.user_name}}</td>
+.03+62                            <td>{{data.status}}</td>
+                              <td>
+                                 {% if data.status == 0 %}
+                                    Pending
+                                 {% elif data.status == 1 %}
+                                    Accepted
+                                 {% else %}
+                                    Rejected
+                                 {% endif %}
+                              </td>
+                            <td>{{data.payment_status}}</td>
+                            <td>{{data.payment_amount}}</td>
+                            <td><a href="/accpet/{{data.b_id}}">Accept</a></td>
+                            <td><a href="/reject/{{data.b_id}}">Reject</a></td>
+                          </tr>
+                        
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

@@ -1,0 +1,213 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+
+        
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                    <li><a href="/client/client_index/">Home</a></li>
+                    <li><span>PG</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">PG</h2>
+            </div><!-- /.container -->
+            {% comment %} <div class="banner-form__position wow fadeInUp" data-wow-delay="300ms"> {% endcomment %}
+                {% comment %} <div class="container"> {% endcomment %}
+                    {% comment %} <form class="banner-form__wrapper wow fadeInUp" action="https://bracketweb.com/villoz-html/villa-grid-1-right.html" data-wow-delay="200ms"> {% endcomment %}
+                        {% comment %} <div class="row"> {% endcomment %}
+                            {% comment %} <div class="col-lg-4"> {% endcomment %}
+                                {% comment %} <div class="banner-form__control"> {% endcomment %}
+                                    {% comment %} <label for="location">Location</label> {% endcomment %}
+                                    {% comment %} <select name="location" class="selectpicker" id="location"> {% endcomment %}
+                                        {% comment %} <option value="select">Where to Next?</option> {% endcomment %}
+                                        {% comment %} <option value="spain">Spain</option> {% endcomment %}
+                                        {% comment %} <option value="africa">Africa</option> {% endcomment %}
+                                        {% comment %} <option value="europe">Europe</option> {% endcomment %}
+                                        {% comment %} <option value="thailand">Thailand</option> {% endcomment %}
+                                        {% comment %} <option value="dubai">Dubai</option> {% endcomment %}
+                                        {% comment %} <option value="australia">Australia</option> {% endcomment %}
+                                        {% comment %} <option value="swizerlan">Swizerlan</option> {% endcomment %}
+                                    {% comment %} </select> {% endcomment %}
+                                    {% comment %} <i class="icon-place"></i> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                            {% comment %} </div> {% endcomment %}
+                            {% comment %} <div class="col-lg-2"> {% endcomment %}
+                                {% comment %} <div class="banner-form__control"> {% endcomment %}
+                                    {% comment %} <label for="checkin">Checkin</label> {% endcomment %}
+                                    {% comment %} <input class="villoz-datepicker" id="checkin" type="text" name="checkin" placeholder="Add Date"> {% endcomment %}
+                                    {% comment %} <i class="icon-calendar"></i> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                            {% comment %} </div> {% endcomment %}
+                            {% comment %} <div class="col-lg-2"> {% endcomment %}
+                                {% comment %} <div class="banner-form__control"> {% endcomment %}
+                                    {% comment %} <label for="checkout">Checkout</label> {% endcomment %}
+                                    {% comment %} <input class="villoz-datepicker" id="checkout" type="text" name="checkout" placeholder="Add Date"> {% endcomment %}
+                                    {% comment %} <i class="icon-calendar"></i> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                            {% comment %} </div> {% endcomment %}
+                            {% comment %} <div class="col-lg-3"> {% endcomment %}
+                                {% comment %} <div class="banner-form__control"> {% endcomment %}
+                                    {% comment %} <label for="guests">Guests</label> {% endcomment %}
+                                    {% comment %} <button type="submit" class="banner-form__qty-minus sub"> {% endcomment %}
+                                        {% comment %} <i class="icon-minus-1"></i> {% endcomment %}
+                                    {% comment %} </button> {% endcomment %}
+                                    {% comment %} <input id="guests" type="number" value="0" name="guests" placeholder="0"> {% endcomment %}
+                                    {% comment %} <button type="submit" class="banner-form__qty-plus add"> {% endcomment %}
+                                        {% comment %} <i class="icon-plus-1"></i> {% endcomment %}
+                                    {% comment %} </button> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                            {% comment %} </div> {% endcomment %}
+                            {% comment %} <div class="col-lg-1"> {% endcomment %}
+                                {% comment %} <button type="submit" aria-label="search submit" class="villoz-btn villoz-btn--base"> {% endcomment %}
+                                    {% comment %} <i><i class="icon-magnifying-glass"></i></i> {% endcomment %}
+                                    {% comment %} <span><i class="icon-magnifying-glass"></i></span> {% endcomment %}
+                                {% comment %} </button> {% endcomment %}
+                            {% comment %} </div> {% endcomment %}
+                        {% comment %} </div> {% endcomment %}
+                    {% comment %} </form> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
+        </section><!-- /.page-header -->
+        <section class="villa-page">
+            <div class="container tabs-box">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="villa-page__info-top">
+                            <div class="villa-page__showing-text">Showing 1–9 of 12 Results</div><!-- villa-show-item -->
+                            <ul class="villa-page__nav tab-buttons list-unstyled">
+                                <li data-tab="#list" class="tab-btn"><span class="icon-list"></span></li>
+                                <li data-tab="#grid" class="tab-btn active-btn"><span class="icon-grid"></span></li>
+                            </ul><!-- villa-tab -->
+                            <div class="villa-page__showing-sort">
+                                <select class="selectpicker" aria-label="Sort by ratings">
+                                    <option selected>Sort by ratings</option>
+                                    <option value="1">Sort by popular</option>
+                                    <option value="1">Sort by view</option>
+                                    <option value="2">Sort by price</option>
+                                </select>
+                            </div><!-- villa-sorting -->
+                        </div>
+                        <div class="tabs-content">
+                            <div class="tab" id="list">
+                                <div class="row gutter-y-30">
+                                    {% for data in pg %}
+                                    <div class="col-lg-12">
+                                        <div class="villa-card-list wow fadeInUp" data-wow-delay="100ms">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-lg-5">
+                                                    <div class="villa-card-list__image">
+                                                        <img src="{% static '/assets/img/p1.jpg' %}" alt="villoz">
+                                                        <a href="javascript:void(0)" class="villa-card-list__like"><span class="fas fa-heart"></span></a><!-- /.villa-card-list__like -->
+                                                        <div class="villa-card-list__flash">
+                                                            <p class="villa-card-list__flash__label feature">Featured</p>
+                                                        </div><!-- /.villa-card-list__label -->
+                                                    </div><!-- /.villa-card-list__image -->
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <div class="villa-card-list__content">
+                                                        <div class="villa-card-list__btns">
+                                                            <a class="villoz-image-popup" href="#" data-gallery-options='{
+                                                        "items": [
+                                                          {
+                                                            "src": "assets/img/p1.jpg"
+                                                          },
+                                                          {
+                                                            "src": "assets/img/p1.jpg"
+                                                          },
+                                                          {
+                                                            "src": "assets/img/p1.jpg"
+                                                          }
+                                                        ],
+                                                        "gallery": {
+                                                          "enabled": true
+                                                        },
+                                                        "type": "image"
+                                                    }'><span class="icon-camera"></span><span class="villa-card-list__btns__count">3</span></a>
+                                                            <a class="video-popup" href="https://www.youtube.com/watch?v=0MuL8fd3pb8"><span class="icon-video"></span></a>
+                                                        </div>
+                                                        <div class="villa-card-list__ratings">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <p class="villa-card-list__address">{{data.location}}</p>
+                                                        <h3 class="villa-card-list__title"><a href="/client/villadetails/{{data.pg_id}}">{{data.pg_name}}</a></h3><!-- /.villa-card-list__title -->
+                                                        <div class="villa-card-list__price">{{data.pg_price}} <span class="villa-card-list__price__shift"></span></div>
+                                                        <ul class="list-unstyled villa-card-list__meta">
+                                                            {% comment %} <li><span class="icon-bed"></span>3 beds</li> {% endcomment %}
+                                                            {% comment %} <li><span class="icon-bath"></span>2 baths</li> {% endcomment %}
+                                                            {% comment %} <li><span class="icon-users"></span>12 guests</li> {% endcomment %}
+                                                        </ul><!-- /.list-unstyled villa-card-list__meta -->
+                                                    </div><!-- /.villa-card-list__content -->
+                                                </div>
+                                            </div>
+                                        </div><!-- /.villa-card-list -->
+                                    </div>
+                                    {% endfor %}
+                                    
+                                </div><!-- /.row -->
+                            </div>
+                            <div class="tab active-tab" id="grid">
+                                <div class="row gutter-y-30">
+                                    {% for data in pg %}
+                                    <div class="col-xl-4 col-md-6">
+                                        <div class="villa-card-two villa-card-two--small wow fadeInUp" data-wow-delay="100ms">
+                                            <div class="villa-card-two__image">
+                                                <img src="{% static '/assets/img/p1.jpg' %}" alt="villoz">
+                                                <a href="javascript:void(0)" class="villa-card-two__like"><span class="fas fa-heart"></span></a><!-- /.villa-card-two__like -->
+                                                <div class="villa-card-two__flash">
+                                                    <p class="villa-card-two__flash__label feature">Featured</p>
+                                                </div><!-- /.villa-card-two__label -->
+                                                <div class="villa-card-two__content">
+                                                    <div class="villa-card-two__btns">
+                                                        <a class="villoz-image-popup" href="#" data-gallery-options='{
+                                                    "items": [
+                                                      {
+                                                        "src": "assets/img/p1.jpg"
+                                                      },
+                                                      {
+                                                        "src": "assets/img/p1.jpg"
+                                                      },
+                                                      {
+                                                        "src": "assets/img/p1.jpg"
+                                                      }
+                                                    ],
+                                                    "gallery": {
+                                                      "enabled": true
+                                                    },
+                                                    "type": "image"
+                                                }'><span class="icon-camera"></span><span class="villa-card-two__btns__count">3</span></a>
+                                                        <a class="video-popup" href="https://www.youtube.com/watch?v=0MuL8fd3pb8"><span class="icon-video"></span></a>
+                                                    </div>
+                                                    <div class="villa-card-two__ratings">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <p class="villa-card-two__address">{{data.location}}</p>
+                                                    <h3 class="villa-card-two__title"><a href="/client/villadetails/{{data.pg_id}}">{{data.pg_name}}</a></h3><!-- /.villa-card-two__title -->
+                                                    <div class="villa-card-two__price">{{data.pg_price}}<span class="villa-card-two__price__shift"></span></div>
+                                                </div><!-- /.villa-card-two__content -->
+                                            </div><!-- /.villa-card-two__image -->
+                                            <ul class="list-unstyled villa-card-two__meta">
+                                                {% comment %} <li><span class="icon-bed"></span>3 beds</li> {% endcomment %}
+                                                {% comment %} <li><span class="icon-bath"></span>2 baths</li> {% endcomment %}
+                                            </ul><!-- /.list-unstyled villa-card-two__meta -->
+                                        </div><!-- /.villa-card-two -->
+                                    </div><!-- /.item -->
+                                    {% endfor %}
+                                    
+                                </div><!-- /.row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %} 

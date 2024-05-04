@@ -1,0 +1,101 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+         <section class="page-header page-header--blank">
+     <div class="page-header__bg"></div>
+     <!-- /.page-header__bg -->
+ </section><!-- /.page-header -->
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                     <li><a href="/client/reg/">Registration</a></li>
+                    </ul>
+                </ul>
+                <h2 class="page-header__title">Login</h2>
+            </div>
+            <div class="container">
+                
+            </div>
+        </section><!-- /.page-header -->
+        <!-- Login Start -->
+        <section class="login-page">
+            <div class="container">
+                <div class="login-page__info">
+                    
+                           
+                </div><!-- login-info -->
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="login-page__wrap">
+                            <h3 class="login-page__wrap__title">Login</h3>
+                            <form class="login-page__form" action="/client/clientlogin/" method="POST">
+                                {% csrf_token %}
+                                <div class="login-page__form-input-box">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Username of email *">
+                                </div>
+                                <div class="login-page__form-input-box">
+                                    <input type="password" id="password " name="password" id="" placeholder="Password *">
+                                </div>
+                                <div class="login-page__checked-box">
+                                    <input type="checkbox" name="save-data" id="save-data">
+                                    <label for="save-data"><span></span>Remember Me?</label>
+                                </div>
+                                <div class="login-page__form-btn-box">
+                                    <button type="submit" class="villoz-btn">
+                                        <i>Login</i>
+                                        <span>Login</span>
+                                    </button>
+                                    <div class="login-page__form-forgot-password">
+                                        <a href="/client/forget/">Forgot your Passowrd?</a>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- login-form -->
+                    </div>
+                    {% comment %} <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="400ms"> {% endcomment %}
+                        {% comment %} <div class="login-page__wrap"> {% endcomment %}
+                            {% comment %} <h3 class="login-page__wrap__title">Register</h3> {% endcomment %}
+                            {% comment %} <form class="login-page__form" method="post" action="/client/reg/"> {% endcomment %}
+                                {% comment %} {% csrf_token %} {% endcomment %}
+                                {% comment %} <div class="login-page__form-input-box"> {% endcomment %}
+                                     {% comment %} <input type="text" id="text" name="f_name" placeholder="Name" required> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__form-input-box"> {% endcomment %}
+                                    {% comment %} <input type="text" id="text" name="l_name" placeholder="Name" required> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__form-input-box"> {% endcomment %}
+                                    {% comment %} <input type="email" placeholder="Email address"> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__form-input-box"> {% endcomment %}
+                                    {% comment %} <input type="text" name="Contact" id="text" placeholder="Contact"> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__form-input-box"> {% endcomment %}
+                                    {% comment %} <input type="password" id="text" name="Passowrd" placeholder="Password"> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="col-lg-12"> {% endcomment %}
+                                    {% comment %} <div class="form-group"> {% endcomment %}
+                                        {% comment %} <input type="radio" name="Gender" value="M"> {% endcomment %}
+                                        {% comment %} <label for="male">Male</label> {% endcomment %}
+                                        {% comment %} <input type="radio" name="Gender" value="F"> {% endcomment %}
+                                        {% comment %} <label for="female">Female</label>                                    </div> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__checked-box"> {% endcomment %}
+                                    {% comment %} <input type="checkbox" name="accept-policy" id="accept-policy"> {% endcomment %}
+                                    {% comment %} <label for="accept-policy"><span></span>I accept company privacy policy.</label> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                                {% comment %} <div class="login-page__form-btn-box"> {% endcomment %}
+                                    {% comment %} <button type="submit" class="villoz-btn"> {% endcomment %}
+                                        {% comment %} <i>Register</i> {% endcomment %}
+                                        {% comment %} <span>Register</span> {% endcomment %}
+                                    {% comment %} </button> {% endcomment %}
+                                {% comment %} </div> {% endcomment %}
+                            {% comment %} </form> {% endcomment %}
+                        </div><!-- register-form -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock %}

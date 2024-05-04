@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Input Text</h4>
+                        </div>
+                        <form action="/insertinquiry/" method="post">
+                            {% csrf_token %}
+                            <div class="card-body">
+                                <div class="form-group">
+
+                                    <label>Inuiry UserName</label>
+                                    <input type="text" name="i_user_name" class="form-control">
+                                    <label>E-mail</label>
+                                    <input type="text" name="email" class="form-control">
+                                    <label>Contact</label>
+                                    <input type="text" name="conatct" class="form-control">
+                                    <label>Descripttion</label>
+                                    <input type="text" name="des" class="form-control">
+
+                                </div>
+                                <button type="submit">Insert</button>
+                        </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</div>
+</section>
+
+</div>
+</body>
+
+</html>
+{% endblock %}

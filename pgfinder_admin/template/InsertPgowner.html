@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Input Text</h4>
+                        </div>
+                        <form action="/insertpgowner/" method="post">
+                            {% csrf_token %}
+                            <div class="card-body">
+                                <div class="form-group">
+
+                                    <label>PG Name</label>
+                                    <input type="text" name="pg_name" class="form-control">
+                                    <label>E-mail</label>
+                                    <input type="text" name="email" class="form-control">
+                                    <label>Password</label>
+                                    <input type="text" name="password" class="form-control">
+                                    <label>Location</label>
+                                    <input type="text" name="location" class="form-control">
+                                    <label>Area Id</label>
+                                    <input type="text" name="area_id" class="form-control">
+                                    <label>Area_rating</label>
+                                    <input type="text" name="area_rating" class="form-control">
+                                    <label>Average_rating</label>
+                                    <input type="text" name="avg_rating" class="form-control">
+                                    <label>Cover_image</label>
+                                    <input type="text" name="cover_image" class="form-control">
+                                    <label>Description</label>
+                                    <input type="text" name="des" class="form-control">
+
+                                </div>
+                                <button type="submit">Insert</button>
+                        </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</div>
+</section>
+
+</div>
+</body>
+
+</html>
+{% endblock %}

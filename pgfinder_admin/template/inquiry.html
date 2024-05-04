@@ -1,0 +1,51 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>INQUIRY ID</th>
+                            <th>INQUIRY NAME</th>
+                            <th>EMAIL</th>
+                            <th>CONTACT</th>
+                            <th>DESCRIPTION</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for data in i %}
+                          <tr>
+                        
+                            <td>{{data.i_id}}</td>
+                            <td>{{data.i_user_name}}</td>
+                            <td>{{data.email}}</td>
+                            <td>{{data.contact}}</td>
+                            <td>{{data.des}}</td>
+                            <td><a href="/deleteInquiry/{{data.i_id}}">Delete</a></td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

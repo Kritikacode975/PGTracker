@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+
+<section class="page-header">
+            <div class="page-header__bg"></div>
+           
+            <!-- <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Shop</span></li>
+                </ul>
+                <h2 class="page-header__title">Checkout</h2>
+            </div> -->
+        </section>
+<h1>Booking Success</h1>
+<br>
+<br>
+<br>
+<form class="checkout-page__form" action="/client/client_index/" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Go to home">
+</form>
+{% endblock %}

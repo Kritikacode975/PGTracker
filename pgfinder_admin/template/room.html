@@ -1,0 +1,51 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>Room Id</th>
+                            <th>Room Name</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <a href="/insertroomtype/">Insert</a>
+                          {% for data in r %}
+                          <tr>
+                        
+                            <td>{{data.r_id}}</td>
+                            <td>{{data.r_name}}</td>
+                            <td>{{data.des}}</td>
+                            <td><a href="/deleteRoomtype/{{data.r_id}}">Delete</a>
+                              <a href="/updateRoomtype/{{data.r_id}}">Update
+                            </td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

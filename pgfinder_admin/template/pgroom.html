@@ -1,0 +1,55 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>PG_ROOM_ID</th>
+                            <th>ROOM_type</th>
+                            <th>PG ID</th>
+                            <th>NO_OF_ROOM</th>
+                            <th>CHANGES</th>
+                            <th>Action</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <a href="/insertpgroom/">Insert</a>
+                          {% for data in pr %}
+                          <tr>
+                        
+                            <td>{{data.pg_room_id}}</td>
+                            <td>{{data.r_id.r_name}}</td>
+                            <td>{{data.pg_id.pg_name}}</td>
+                            <td>{{data.no_of_room}}</td>
+                            <td>{{data.changes}}</td>
+                            <td><a href="/deletePGroom/{{data.pg_room_id}}">Delete</a>
+                              <a href="/updatePGroom/{{data.pg_room_id}}">Update
+                            </td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

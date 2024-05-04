@@ -1,0 +1,1093 @@
+{% extends 'client_headerfooter.html' %}
+{% load static %}
+{% block content  %}
+        <!-- main-banner-start -->
+        <section class="banner-one" style="background-image: url(assets/images/shapes/banner-1-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-9 wow fadeInUp" data-wow-delay="300ms">
+                        <h2 class="banner-one__title">Luxury villas for<br> the vacations</h2><!-- banner-title -->
+                    </div>
+                    <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="banner-one__content">
+                            <div class="banner-one__ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="banner-one__text"><span>4.9 / 5</span> See our Average Customer Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-form wow fadeInUp" data-wow-delay="300ms">
+            <div class="banner-form__carousel villoz-owl__carousel owl-carousel owl-theme" data-owl-options='{
+		"items": 1,
+		"margin": 0,
+		"loop": true,
+		"smartSpeed": 700,
+		"animateOut": "fadeOut",
+		"autoplayTimeout": 5000, 
+		"nav": false,
+		"dots": false,
+		"autoplay": true
+		}'>
+                <div class="item">
+                    <div class="banner-form__image" style="background-image: url(/static/assets/images/backgrounds/slider-1-1.jpg);"></div>
+                </div>
+                <div class="item">
+                    <div class="banner-form__image" style="background-image: url(/static/assets/images/backgrounds/slider-1-2.jpg);"></div>
+                </div>
+                <div class="item">
+                    <div class="banner-form__image" style="background-image: url(static/assets/images/backgrounds/slider-1-3.jpg);"></div>
+                </div>
+            </div><!-- banner slider -->
+            <div class="banner-form__position wow fadeInUp" data-wow-delay="300ms">
+                <div class="container">
+                    <form class="banner-form__wrapper" action="https://bracketweb.com/villoz-html/villa-grid-1-right.html">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="banner-form__control">
+                                    <label for="location">Location</label>
+                                    <select name="location" class="selectpicker" id="location">
+                                        <option value="select">Where to Next?</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="africa">Africa</option>
+                                        <option value="europe">Europe</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="dubai">Dubai</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="swizerlan">Swizerlan</option>
+                                    </select>
+                                    <i class="icon-place"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="banner-form__control">
+                                    <label for="checkin">Checkin</label>
+                                    <input class="villoz-datepicker" id="checkin" type="text" name="checkin" placeholder="Add Date">
+                                    <i class="icon-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="banner-form__control">
+                                    <label for="checkout">Checkout</label>
+                                    <input class="villoz-datepicker" id="checkout" type="text" name="checkout" placeholder="Add Date">
+                                    <i class="icon-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="banner-form__control">
+                                    <label for="guests">Guests</label>
+                                    <button type="submit" class="banner-form__qty-minus sub">
+                                        <i class="icon-minus-1"></i>
+                                    </button>
+                                    <input id="guests" type="number" value="0" name="guests" placeholder="0">
+                                    <button type="submit" class="banner-form__qty-plus add">
+                                        <i class="icon-plus-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-1">
+                                <button type="submit" aria-label="search submit" class="villoz-btn villoz-btn--base">
+                                    <i><i class="icon-magnifying-glass"></i></i>
+                                    <span><i class="icon-magnifying-glass"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- main-banner-end -->
+        <!-- Service Start -->
+        <section class="service-one">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">AMENITIES & SERVICES</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Offer the Best Services <br>to Your Stay</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="service-one__carousel villoz-owl__carousel villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				},
+				"1300": {
+					"items": 4
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="100ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-1.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Private Chef</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="200ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-2.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Quality Gym</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="300ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-3.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Housekeeping</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                    <div class="item">
+                        <div class="service-one__item wow fadeInUp" data-wow-delay="400ms">
+                            <div class="service-one__image">
+                                <img src="{% static 'assets/images/resources/service-1-4.jpg' %}" alt="villoz">
+                            </div>
+                            <div class="service-one__content">
+                                <a class="service-one__content__rm" href="about.html"><span class="icon-right-arrow"></span></a>
+                                <h3 class="service-one__content__title">Spa & Wellness</h3>
+                                <p class="service-one__content__text">There are many of passages lorem ipsum available.</p>
+                            </div>
+                        </div><!-- /.service-card-one -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+        <section class="about-one">
+            <div class="about-one__shape villoz-splax" data-para-options='{"orientation": "left", "scale": 1.5, "delay": ".5", "transition": "cubic-bezier(0,0,0,1)", "overflow": true
+        }'><img src="{% static 'assets/images/resources/about-1-plan.png' %}" alt="villoz" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="about-one__content wow fadeInLeft" data-wow-delay="300ms">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Welcome to villox</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">Get to Know About Luxury & <br>Comfortable Villas</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="about-one__content__map"><img src="{% static 'assets/images/resources/about-1-map.png' %}" alt="villoz"></div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                    <div class="about-one__image-one">
+                                        <img src="{% static 'assets/images/resources/about-1-1.jpg' %}" alt="villoz">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-6">
+                                    <div class="about-one__content-inner">
+                                        <h5 class="about-one__content-inner__title">We’re Providing a Great Opportunity for Staying in Top Luxury Villas.</h5>
+                                        <p class="about-one__content-inner__text">
+                                            Lorem ipsum dolor sit amet, con adipiscing elit tiam convallis elit id impedie. Quisq commodo simply free ornare tortor.
+                                            If you are going to use a passage.
+                                        </p>
+                                        <ul class="about-one__content-inner__list">
+                                            <li><span class="fa fa-check-circle"></span>Guarantee happiness</li>
+                                            <li><span class="fa fa-check-circle"></span>Search & book the best</li>
+                                            <li><span class="fa fa-check-circle"></span>Most luxury villas available</li>
+                                            <li><span class="fa fa-check-circle"></span>Premier choice for vacation rentals</li>
+                                        </ul>
+                                        <a href="about.html" class="villoz-btn">
+                                            <i>Discover More</i>
+                                            <span>Discover More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.about__image -->
+                    </div><!-- /.col-lg-8 -->
+                    <div class="col-xl-4 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="about-one__right">
+                            <div class="about-one__circle">
+                                <div class="about-one__circle__icon"><span class="icon-best-seller"></span></div>
+                                <div class="curved-circle"><!-- curved-circle start-->
+                                    <div class="curved-circle--item" data-circle-text-options='{
+								"radius": 95,
+								"forceWidth": true,
+								"forceHeight": true
+							}'>Top traveler choice villox</div>
+                                </div><!-- curved-circle end-->
+                            </div><!-- /.about-circle -->
+                            <div class="about-one__image-two">
+                                <img src="{% static 'assets/images/resources/about-1-2.jpg' %}" alt="villoz">
+                            </div>
+                            <ul class="list-unstyled about-one__facts">
+                                <li class="about-one__facts__item count-box">
+                                    <div class="about-one__facts__icon"><span class="icon-villa-1"></span></div><!-- /.funfact-one__icon -->
+                                    <h3 class="about-one__facts__count count-text" data-stop="2270" data-speed="1500"></h3><!-- /.funfact-one__count -->
+                                    <p class="about-one__facts__text">Villas on Rent</p><!-- /.funfact-one__text -->
+                                </li><!-- /.funfact-one__item -->
+                                <li class="about-one__facts__item count-box">
+                                    <div class="about-one__facts__icon"><span class="icon-map"></span></div><!-- /.funfact-one__icon -->
+                                    <h3 class="about-one__facts__count count-text" data-stop="289" data-speed="1500"></h3><!-- /.funfact-one__count -->
+                                    <p class="about-one__facts__text">Top Destination</p><!-- /.funfact-one__text -->
+                                </li><!-- /.funfact-one__item -->
+                            </ul>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.about-one -->
+        <section class="villa-one" style="background-image: url(assets/images/shapes/villa-bg-1.jpg);">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">our villas for rent</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">See Villas You’ll Love to<br> Book for Vacations</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="villa-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="100ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/images/villa/villa-1-1.jpg' %}" alt="villoz">
+                                <a href="javascript:void(0)" class="villa-card__like"><span class="fas fa-heart"></span></a><!-- /.villa-card__like -->
+                                <div class="villa-card__flash">
+                                    <p class="villa-card__flash__label feature">Featured</p>
+                                </div><!-- /.villa-card__label -->
+                                <div class="villa-card__btns">
+                                    <a class="villoz-image-popup" href="#" data-gallery-options='{
+								"items": [
+								  {
+									"src": "assets/images/villa/villa-1-1.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-2.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-3.jpg"
+								  }
+								],
+								"gallery": {
+								  "enabled": true
+								},
+								"type": "image"
+							}'><span class="icon-camera"></span><span class="villa-card__btns__count">3</span></a>
+                                    <a class="video-popup" href="https://www.youtube.com/watch?v=0MuL8fd3pb8"><span class="icon-video"></span></a>
+                                </div>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <div class="villa-card__ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="villa-card__address">Disle-Sur-Mer, Southwest, France</p>
+                                <h3 class="villa-card__title"><a href="villa-details.html">The Lake House</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price">$160 <span class="villa-card__price__shift">/ Night</span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>3 beds</li>
+                                    <li><span class="icon-bath"></span>2 baths</li>
+                                    <li><span class="icon-users"></span>12 guests</li>
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="200ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/images/villa/villa-1-2.jpg' %}" alt="villoz">
+                                <a href="javascript:void(0)" class="villa-card__like"><span class="fas fa-heart"></span></a><!-- /.villa-card__like -->
+                                <div class="villa-card__flash">
+                                    <p class="villa-card__flash__label off">10% Off</p>
+                                </div><!-- /.villa-card__label -->
+                                <div class="villa-card__btns">
+                                    <a class="villoz-image-popup" href="#" data-gallery-options='{
+								"items": [
+								  {
+									"src": "assets/images/villa/villa-1-2.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-3.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-1.jpg"
+								  }
+								],
+								"gallery": {
+								  "enabled": true
+								},
+								"type": "image"
+							}'><span class="icon-camera"></span><span class="villa-card__btns__count">3</span></a>
+                                    <a class="video-popup" href="https://www.youtube.com/watch?v=0MuL8fd3pb8"><span class="icon-video"></span></a>
+                                </div>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <div class="villa-card__ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="villa-card__address">Disle-Sur-Mer, Southwest, France</p>
+                                <h3 class="villa-card__title"><a href="villa-details.html">Restore the Chateau</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price"><span class="villa-card__price__disable">$230</span> $200 <span class="villa-card__price__shift">/ Night</span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>3 beds</li>
+                                    <li><span class="icon-bath"></span>2 baths</li>
+                                    <li><span class="icon-users"></span>12 guests</li>
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="villa-card wow fadeInUp" data-wow-delay="300ms">
+                            <div class="villa-card__image">
+                                <img src="{% static 'assets/images/villa/villa-1-3.jpg' %}" alt="villoz">
+                                <a href="javascript:void(0)" class="villa-card__like"><span class="fas fa-heart"></span></a><!-- /.villa-card__like -->
+                                <div class="villa-card__flash">
+                                    <p class="villa-card__flash__label feature">Featured</p>
+                                    <p class="villa-card__flash__label off">10% Off</p>
+                                </div><!-- /.villa-card__label -->
+                                <div class="villa-card__btns">
+                                    <a class="villoz-image-popup" href="#" data-gallery-options='{
+								"items": [
+								  {
+									"src": "assets/images/villa/villa-1-3.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-2.jpg"
+								  },
+								  {
+									"src": "assets/images/villa/villa-1-1.jpg"
+								  }
+								],
+								"gallery": {
+								  "enabled": true
+								},
+								"type": "image"
+							}'><span class="icon-camera"></span><span class="villa-card__btns__count">3</span></a>
+                                    <a class="video-popup" href="https://www.youtube.com/watch?v=0MuL8fd3pb8"><span class="icon-video"></span></a>
+                                </div>
+                            </div><!-- /.villa-card__image -->
+                            <div class="villa-card__content">
+                                <div class="villa-card__ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="villa-card__address">Disle-Sur-Mer, Southwest, France</p>
+                                <h3 class="villa-card__title"><a href="villa-details.html">Maison Terranova</a></h3><!-- /.villa-card__title -->
+                                <div class="villa-card__price"><span class="villa-card__price__disable">$180</span> $140 <span class="villa-card__price__shift">/ Night</span></div>
+                                <ul class="list-unstyled villa-card__meta">
+                                    <li><span class="icon-bed"></span>3 beds</li>
+                                    <li><span class="icon-bath"></span>2 baths</li>
+                                    <li><span class="icon-users"></span>12 guests</li>
+                                </ul><!-- /.list-unstyled villa-card__meta -->
+                            </div><!-- /.villa-card__content -->
+                        </div><!-- /.villa-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.villa-one -->
+        <section class="destination-one">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
+                        <div class="sec-title text-left">
+
+                            <h6 class="sec-title__tagline">Discover villas</h6><!-- /.sec-title__tagline -->
+
+                            <h3 class="sec-title__title">Checkout Beautiful Destinations Arround the World</h3><!-- /.sec-title__title -->
+                        </div><!-- /.sec-title -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <a href="destination-details.html" class="destination-one__item villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+                            <img src="{% static 'assets/images/destination/destination-1-1.jpg' %}" alt="villoz">
+                            <span class="destination-one__item__name"><b>Spain</b></span>
+                            <span class="destination-one__item__rent">6 villas to rent</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <a href="destination-details.html" class="destination-one__item destination-one__item--radius villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'>
+                            <img src="{% static 'assets/images/destination/destination-1-2.jpg' %}" alt="villoz">
+                            <span class="destination-one__item__name"><b>Africa</b></span>
+                            <span class="destination-one__item__rent">5 villas to rent</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <a href="destination-details.html" class="destination-one__item villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+                            <img src="{% static 'assets/images/destination/destination-1-3.jpg' %}" alt="villoz">
+                            <span class="destination-one__item__name"><b>Europe</b></span>
+                            <span class="destination-one__item__rent">7 villas to rent</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <a href="destination-details.html" class="destination-one__item destination-one__item--radius villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'>
+                            <img src="{% static 'assets/images/destination/destination-1-4.jpg' %}" alt="villoz">
+                            <span class="destination-one__item__name"><b>Thailand</b></span>
+                            <span class="destination-one__item__rent">4 villas to rent</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                        <a href="destination-details.html" class="destination-one__item villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+                            <img src="{% static 'assets/images/destination/destination-1-5.jpg' %}" alt="villoz">
+                            <span class="destination-one__item__name"><b>Dubai</b></span>
+                            <span class="destination-one__item__rent">8 villas to rent</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="destination-one__offer">
+                            <img src="{% static 'assets/images/shapes/off-1.png' %}" alt="villoz">
+                            <h2 class="destination-one__offer__title">Summer <br>hot deals</h2>
+                            <a href="destination-details.html" class="villoz-btn villoz-btn--border">
+                                <i>View Deals</i>
+                                <span>View Deals</span>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.destination-one -->
+        <section class="feature-one" style="background-image: url(assets/images/shapes/feature-bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                        <div class="feature-one__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Get best experience</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">The Only Place you’ll find<br> Outside the Home</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="feature-one__wrapper">
+                                <div class="row gutter-y-30">
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-diamond"></span></div>
+                                            <h3 class="feature-one__item__title">Luxury Villas</h3>
+                                            <p class="feature-one__item__text">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-guarantee"></span></div>
+                                            <h3 class="feature-one__item__title">Trusted Experience</h3>
+                                            <p class="feature-one__item__text">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-room-service"></span></div>
+                                            <h3 class="feature-one__item__title">Unparalleled Service</h3>
+                                            <p class="feature-one__item__text">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-secure-payment"></span></div>
+                                            <h3 class="feature-one__item__title">Secure Payments</h3>
+                                            <p class="feature-one__item__text">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                </div>
+                                <div class="feature-one__wrapper__middle-icon"><img src="{% static 'assets/images/shapes/feature-1-middle-icon.png' %}" alt="feature"></div>
+                            </div>
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.col-xl-7 -->
+                    <div class="col-xl-5">
+                        <div class="villoz-stretch-element-inside-column">
+                            <div class="feature-one__image wow slideInRight">
+                                <img src="{% static 'assets/images/resources/feature-1.jpg' %}" alt="">
+                            </div><!-- /.feature-one__image -->
+                        </div><!-- /.villoz-stretch-element-inside-column -->
+                    </div><!-- /.col-xl-5 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.feature-one -->
+        <div class="client-carousel ">
+            <div class="container">
+                <div class="client-carousel__one villoz-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop":true,
+            "autoplay": 6000,
+            "nav":false,
+            "dots":false,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive":{
+                "0":{
+                    "items":1,
+                    "margin": 0
+                },
+                "360":{
+                    "items":2,
+                    "margin": 0
+                },
+                "575":{
+                    "items":3,
+                    "margin": 30
+                },
+                "768":{
+                    "items":3,
+                    "margin": 40
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 40
+                },
+                "1200":{
+                    "items": 5
+                }
+            }
+            }'>
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="{% static 'assets/images/resources/brand-1-1.png' %}" alt="villoz">
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.thm-owl__slider -->
+            </div><!-- /.container -->
+        </div><!-- /.client-carousel -->
+        <section class="testimonials-one" style="background-image: url(assets/images/backgrounds/testimonial-bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="testimonials-one__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Guest reviews</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">What Guests Saying?</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="testimonials-one__content__ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div><!-- /.testimonials-average__ratings -->
+                            <p class="testimonials-one__content__text">Trust Score 4.5 (Based on 2,500 Reviews)</p>
+                            <div class="testimonials-one__carousel-dots"></div><!-- /.testimonials-custome-dots -->
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="testimonials-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow owl-carousel" data-owl-options='{
+					"items": 1,
+					"margin": 30,
+					"loop": false,
+					"smartSpeed": 700,
+					"nav": false,
+					"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+					"dots": true,
+					"dotsContainer": ".testimonials-one__carousel-dots",
+					"autoplay": false,
+					"responsive": {
+						"0": {
+							"items": 1
+						},
+						"768": {
+							"items": 2
+						}
+					}
+					}'>
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-1.jpg' %}" alt="Mike Hardson">
+                                        <h3 class="testimonials-card__name">
+                                            Mike Hardson
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">CEO - Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-2.jpg' %}" alt="Alesha Brown">
+                                        <h3 class="testimonials-card__name">
+                                            Alesha Brown
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-3.jpg' %}" alt="Kevin Martin">
+                                        <h3 class="testimonials-card__name">
+                                            Kevin Martin
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Developer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-4.jpg' %}" alt="Mark Smith">
+                                        <h3 class="testimonials-card__name">
+                                            Mark Smith
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Reviwer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-1.jpg' %}" alt="Mike Hardson">
+                                        <h3 class="testimonials-card__name">
+                                            Mike Hardson
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">CEO - Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-2.jpg' %}" alt="Alesha Brown">
+                                        <h3 class="testimonials-card__name">
+                                            Alesha Brown
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Co Founder</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-3.jpg' %}" alt="Kevin Martin">
+                                        <h3 class="testimonials-card__name">
+                                            Kevin Martin
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Developer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                            <div class="item">
+                                <div class="testimonials-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                                    <div class="testimonials-card__top-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-1.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div><!-- /.testimonials-card__rating -->
+                                    <div class="testimonials-card__content">
+                                        Lorem ipsum is simply free dolor not sit amet, notted adipisicing elit sed do eiusmod incididunt labore et dolore text.
+                                    </div><!-- /.testimonials-card__content -->
+                                    <div class="testimonials-card__author">
+                                        <img src="{% static 'assets/images/resources/testi-1-4.jpg' %}" alt="Mark Smith">
+                                        <h3 class="testimonials-card__name">
+                                            Mark Smith
+                                        </h3><!-- /.testimonials-card__name -->
+                                        <p class="testimonials-card__designation">Reviwer</p><!-- /.testimonials-card__designation -->
+                                    </div><!-- /.testimonials-card__image -->
+                                    <div class="testimonials-card__bottom-bg" style="background-image: url(assets/images/shapes/testi-card-bg-1-2.png);"></div><!-- /.testimonials-card__top-bg -->
+                                    <div class="testimonials-card__bottom-bg-hover" style="background-image: url(assets/images/shapes/testi-card-bg-1-2-hover.png);"></div><!-- /.testimonials-card__top-bg -->
+                                </div><!-- /.testimonials-card -->
+                            </div><!-- /.item -->
+                        </div><!-- /.testimonials-one__carousel -->
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+        <section class="gallery-one gallery-one--home-one">
+            <div class="container">
+                <div class="gallery-one__carousel villoz-owl__carousel  villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 5,
+			"margin": 20,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": false,
+			"autoplay": true,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"576": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				},
+				"1200": {
+					"items": 4
+				},
+				"1500": {
+					"items": 5
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-1.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-1.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-3.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-3.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-4.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-4.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-5.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-5.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-6.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-6.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'assets/images/gallery/gallery-1-7.jpg' %}" alt="">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'assets/images/gallery/gallery-1-7.jpg' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.col-md-6 col-lg-4 -->
+                </div><!-- /.gallery-one__carousel -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.gallery-one -->
+        <section class="blog-one">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">Our Blog Posts</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Latest News & Articles <br>from the Blog</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="blog-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow villoz-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 30,
+			"loop": false,
+			"smartSpeed": 700,
+			"nav": false,
+			"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+			"dots": true,
+			"autoplay": false,
+			"responsive": {
+				"0": {
+					"items": 1
+				},
+				"768": {
+					"items": 2
+				},
+				"992": {
+					"items": 3
+				}
+			}
+			}'>
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/images/blog/blog-1-1.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <img src="{% static 'assets/images/blog/blog-1-1.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <img src="{% static 'assets/images/blog/blog-1-1.png' %}" alt="10 advantages of staying in a luxury villa">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">10 advantages of staying in a luxury villa</span>
+                                    <!-- /.sr-only --></a>
+                                <div class="blog-card__date"><span>28</span>
+                                    July</div><!-- /.blog-card__date -->
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><a href="blog-list.html">
+                                            <i class="fa fa-user-circle"></i>
+                                            by Admin</a></li>
+                                    <li><a href="blog-details-right.html">
+                                            <i class="fa fa-comments"></i>
+                                            2 Comments</a></li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">10 advantages of staying in a luxury villa</a></h3><!-- /.blog-card__title -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    Read More
+                                    <i class="icon-right-arrow"></i>
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/images/blog/blog-1-2.png' %}" alt="Live a balanced life in a premium villa">
+                                <img src="{% static 'assets/images/blog/blog-1-2.png' %}" alt="Live a balanced life in a premium villa">
+                                <img src="{% static 'assets/images/blog/blog-1-2.png' %}" alt="Live a balanced life in a premium villa">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Live a balanced life in a premium villa</span>
+                                    <!-- /.sr-only --></a>
+                                <div class="blog-card__date"><span>28</span>
+                                    July</div><!-- /.blog-card__date -->
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><a href="blog-list.html">
+                                            <i class="fa fa-user-circle"></i>
+                                            by Admin</a></li>
+                                    <li><a href="blog-details-right.html">
+                                            <i class="fa fa-comments"></i>
+                                            2 Comments</a></li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">Live a balanced life in a premium villa</a></h3><!-- /.blog-card__title -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    Read More
+                                    <i class="icon-right-arrow"></i>
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="blog-card__image">
+                                <img src="{% static 'assets/images/blog/blog-1-3.png' %}" alt="Get villas with a high level of privacy">
+                                <img src="{% static 'assets/images/blog/blog-1-3.png' %}" alt="Get villas with a high level of privacy">
+                                <img src="{% static 'assets/images/blog/blog-1-3.png' %}" alt="Get villas with a high level of privacy">
+                                <a href="blog-details-right.html" class="blog-card__image__link"><span class="sr-only">Get villas with a high level of privacy</span>
+                                    <!-- /.sr-only --></a>
+                                <div class="blog-card__date"><span>28</span>
+                                    July</div><!-- /.blog-card__date -->
+                            </div><!-- /.blog-card__image -->
+                            <div class="blog-card__content">
+                                <ul class="list-unstyled blog-card__meta">
+                                    <li><a href="blog-list.html">
+                                            <i class="fa fa-user-circle"></i>
+                                            by Admin</a></li>
+                                    <li><a href="blog-details-right.html">
+                                            <i class="fa fa-comments"></i>
+                                            2 Comments</a></li>
+                                </ul><!-- /.list-unstyled blog-card__meta -->
+                                <h3 class="blog-card__title"><a href="blog-details-right.html">Get villas with a high level of privacy</a></h3><!-- /.blog-card__title -->
+                                <a href="blog-details-right.html" class="blog-card__link">
+                                    Read More
+                                    <i class="icon-right-arrow"></i>
+                                </a><!-- /.blog-card__link -->
+                            </div><!-- /.blog-card__content -->
+                        </div><!-- /.blog-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-one -->
+        <section class="cta-one">
+            <div class="cta-one__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(assets/images/backgrounds/cta-bg-1-1.jpg);"></div><!-- /.cta-one__bg -->
+            <div class="cta-one__overlay-one wow slideInUp" data-wow-delay="100ms" style="background-image: url(assets/images/shapes/cta-1-overlay.png);"></div><!-- /.cta-one__overlay -->
+            <div class="cta-one__overlay-two wow slideInUp" data-wow-delay="200ms" style="background-image: url(assets/images/shapes/cta-2-overlay.png);"></div><!-- /.cta-one__overlay -->
+            <div class="container">
+                <div class="cta-one__content text-center wow fadeInUp" data-wow-delay="400ms">
+                    <h5 class="cta-one__sub-title">Weekend Special</h5><!-- /.cta-one__sub-title -->
+                    <h3 class="cta-one__title">Get Up To 30% Off on Booking</h3><!-- /.cta-one__title -->
+                    <a href="contact.html" class="villoz-btn">
+                        <i>Start Booking</i>
+                        <span>Start Booking</span>
+                    </a><!-- /.cta-one__btn -->
+                </div><!-- /.cta-one__content -->
+            </div><!-- /.container -->
+        </section><!-- /.cta-one -->
+
+
+
+        {%  endblock %}

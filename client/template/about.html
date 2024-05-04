@@ -1,0 +1,255 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        <!-- main-banner-start -->
+        <section class="page-header">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <ul class="villoz-breadcrumb list-unstyled">
+                <li><a href="/client/client_index/">Home</a></li>
+                <li><span>About Us</span></li>
+                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                <h2 class="page-header__title">About Us</h2>
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+        <section class="about-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-three__thumb wow fadeInLeft" data-wow-delay="300ms">
+                            <div class="about-three__thumb__one"><img src="{% static '/assets/img/abt_1.png' %}" alt="villoz"></div><br><br><br>
+                            <div class="about-three__thumb__two villoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 3, "speed": 700, "scale": 1 }'>
+                                <img src="{% static '/assets/img/abt_2.png' %}" alt="villoz">
+                            </div>
+                        </div><!-- /.about__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="about-three__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">About PG</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">Get to Know About PG</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="about-three__box">
+                                <div class="about-three__box__icon"><span class="icon-tick"></span></div>
+                                <h3 class="about-three__box__title">Types of PG</h3>
+                                <p class="about-three__box__text">
+                                    Explore the various types of PG accommodations available, such as single occupancy.
+                                </p>
+                            </div>
+                            <div class="about-three__box">
+                                <div class="about-three__box__icon"><span class="icon-tick"></span></div>
+                                <h3 class="about-three__box__title">Facilities and Amenities</h3>
+                                <p class="about-three__box__text">
+                                    Look into the facilities and amenities offered by different PG accommodations, including furnished rooms, Wi-Fi connectivity, laundry services, cleaning, and maintenance.
+                                </p>
+                            </div>
+                            <div class="about-three__box">
+                                <div class="about-three__box__icon"><span class="icon-tick"></span></div>
+                                <h3 class="about-three__box__title">Rules and Regulations</h3>
+                                <p class="about-three__box__text">
+                                      Familiarize yourself with the rules and regulations of the PG, such as guest policies, curfew timings, and any restrictions on activities or behaviors.
+                                </p>
+                            </div>
+                            {% comment %} <a href="about.html" class="villoz-btn"> {% endcomment %}
+                                {% comment %} <i>Discover More</i> {% endcomment %}
+                                {% comment %} <span>Discover More</span> {% endcomment %}
+                            {% comment %} </a> {% endcomment %}
+                        </div><!-- /.about__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.about-three -->
+        <section class="fact-one fact-one--about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="fact-one__item text-center" style="background-image: url(static/assets/images/shapes/funfact-border-white.png);">
+                            <div class="fact-one__item__icon"><span class="icon-house"></span></div><!-- /.fact-one__icon -->
+                            <div class="fact-one__item__count">
+                                <span class="count-box">
+                                    <span class="count-text" data-stop="920" data-speed="1500"></span>
+                                </span>
+                            </div><!-- /.fact-one__count -->
+                            <h3 class="fact-one__item__title">PGs</h3><!-- /.fact-one__title -->
+                        </div><!-- /.fact-one__item -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="fact-one__item text-center" style="background-image: url(assets/images/shapes/funfact-border-white.png);">
+                            <div class="fact-one__item__icon"><span class="icon-recommend"></span></div><!-- /.fact-one__icon -->
+                            <div class="fact-one__item__count">
+                                <span class="count-box">
+                                    <span class="count-text" data-stop="28" data-speed="1500"></span>K
+                                </span>
+                            </div><!-- /.fact-one__count -->
+                            <h3 class="fact-one__item__title">Five Star Rating</h3><!-- /.fact-one__title -->
+                        </div><!-- /.fact-one__item -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="fact-one__item text-center" style="background-image: url(assets/images/shapes/funfact-border-white.png);">
+                            <div class="fact-one__item__icon"><span class="icon-refugee"></span></div><!-- /.fact-one__icon -->
+                            <div class="fact-one__item__count">
+                                <span class="count-box">
+                                    <span class="count-text" data-stop="80" data-speed="1500"></span>K
+                                </span>
+                            </div><!-- /.fact-one__count -->
+                            <h3 class="fact-one__item__title">National Guests</h3><!-- /.fact-one__title -->
+                        </div><!-- /.fact-one__item -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="fact-one__item text-center" style="background-image: url(assets/images/shapes/funfact-border-white.png);">
+                            <div class="fact-one__item__icon"><span class="icon-hot-coffee"></span></div><!-- /.fact-one__icon -->
+                            <div class="fact-one__item__count">
+                                <span class="count-box">
+                                    <span class="count-text" data-stop="990" data-speed="1500"></span>
+                                </span>
+                            </div><!-- /.fact-one__count -->
+                            <h3 class="fact-one__item__title">Breakfast Served</h3><!-- /.fact-one__title -->
+                        </div><!-- /.fact-one__item -->
+                    </div><!-- /.col-lg-3 col-md-6 -->
+                </div>
+            </div>
+        </section>
+        <section class="feature-one" style="background-image: url(assets/images/shapes/feature-bg-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 d-flex align-items-center">
+                        <div class="feature-one__content">
+                            <div class="sec-title text-left">
+
+                                <h6 class="sec-title__tagline">Get best experience</h6><!-- /.sec-title__tagline -->
+
+                                <h3 class="sec-title__title">The Only Place you’ll find<br> Outside the Home</h3><!-- /.sec-title__title -->
+                            </div><!-- /.sec-title -->
+                            <div class="feature-one__wrapper">
+                                <div class="row gutter-y-30">
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-diamond"></span></div>
+                                            <h3 class="feature-one__item__title">Research Thoroughly</h3>
+                                            <p class="feature-one__item__text">Take time to research different PG accommodations in your desired location.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-guarantee"></span></div>
+                                            <h3 class="feature-one__item__title">Visit in Person</h3>
+                                            <p class="feature-one__item__text">Whenever possible, visit the PG accommodation in person before making a decision.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-room-service"></span></div>
+                                            <h3 class="feature-one__item__title">Stay Safe and Secure</h3>
+                                            <p class="feature-one__item__text">Take precautions to ensure your safety and security while living in the PG accommodation.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                        <div class="feature-one__item">
+                                            <div class="feature-one__item__icon"><span class="icon-secure-payment"></span></div>
+                                            <h3 class="feature-one__item__title">Provide Feedback</h3>
+                                            <p class="feature-one__item__text">Offer constructive feedback to the landlord or manager based on your experience.</p>
+                                        </div><!-- feature-item -->
+                                    </div>
+                                </div>
+                                <div class="feature-one__wrapper__middle-icon"><img src="{% static 'assets/img/experience.png' %}" alt="feature"></div>
+                            </div>
+                        </div><!-- /.feature-one__content -->
+                    </div><!-- /.col-xl-7 -->
+                    <div class="col-xl-5">
+                        <div class="villoz-stretch-element-inside-column">
+                            <div class="feature-one__image wow slideInRight">
+                                <img src="assets/images/resources/feature-1.jpg" alt="">
+                            </div><!-- /.feature-one__image -->
+                        </div><!-- /.villoz-stretch-element-inside-column -->
+                    </div><!-- /.col-xl-5 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.feature-one -->
+        <section class="team-one team-one--with-border">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline">Our PG Owners</h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title">Meet Our Owners</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="team-one__carousel villoz-owl__carousel villoz-owl__carousel--with-shadow villoz-owl__carousel--basic-nav owl-carousel" data-owl-options='{
+         "items": 1,
+         "margin": 0,
+         "loop": false,
+         "smartSpeed": 700,
+         "nav": false,
+         "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+         "dots": true,
+         "autoplay": false,
+         "responsive": {
+            "0": {
+               "items": 1
+            },
+            "576": {
+               "items": 2,
+               "margin": 30
+            },
+            "992": {
+               "items": 3,
+               "margin": 30
+            }
+         }
+         }'>
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="team-card__image">
+                                <img src="{% static 'assets/img/owner1.png' %}" alt="Kevin Martin">
+                                <div class="team-card__hover">
+                                    <div class="team-card__social">
+                                    </div><!-- /.team-card__social -->
+                                </div><!-- /.team-card__hover -->
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__content">
+                                <h3 class="team-card__title">
+                                    <a href="team-details.html">Kevin Martin</a>
+                                </h3><!-- /.team-card__title -->
+                                <p class="team-card__designation">PG Owner</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__content -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="team-card__image">
+                                <img src="{% static 'assets/img/owner3.png' %}" alt="Aleesha Brown">
+                                <div class="team-card__hover">
+                                </div><!-- /.team-card__hover -->
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__content">
+                                <h3 class="team-card__title">
+                                    <a href="team-details.html">Aleesha Brown</a>
+                                </h3><!-- /.team-card__title -->
+                                <p class="team-card__designation">PG Owner</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__content -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='300ms'>
+                            <div class="team-card__image">
+                                <img src="{% static 'assets/img/owner2.png' %}" alt="David Copers">
+                                <div class="team-card__hover">
+                                </div><!-- /.team-card__hover -->
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__content">
+                                <h3 class="team-card__title">
+                                    <a href="team-details.html">David Copers</a>
+                                </h3><!-- /.team-card__title -->
+                                <p class="team-card__designation">PG oWNER</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__content -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.team-one -->
+
+
+
+        {%  endblock %}

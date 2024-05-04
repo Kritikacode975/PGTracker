@@ -1,0 +1,51 @@
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Export Table</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+                        <thead>
+                          <tr>
+                            <th>City Id</th>
+                            <th>City Name</th>
+                            <th>Action</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <a href="/insertcity/">Insert</a>
+                          {% for data in c %}
+                          <tr>
+                        
+                            <td>{{data.city_id}}</td>
+                            <td>{{data.city_name}}</td>
+                            <td>
+                              
+                              <a href="/updatecity/{{data.city_id}}">Update</a>
+                              <a href="/deleteCity/{{data.city_id}}">Delete</a>
+                            </td>
+                          </tr>
+                        
+                          {% endfor %}
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+{%  endblock %}

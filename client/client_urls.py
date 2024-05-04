@@ -1,0 +1,30 @@
+from django.urls import path, include
+from client import client_views
+
+urlpatterns = [
+    path("clientlogin/", client_views.clientlogin),
+    path("forget/", client_views.forgo),
+    path("set_pas/", client_views.set_pass),
+    path("otpsend/", client_views.OTP),
+    path("profile/", client_views.clientprofile),
+    path("client_index/", client_views.clienthome),
+    path("layout", client_views.layout, name="layout"),
+    path("about", client_views.about, name="about"),
+    path("service", client_views.service, name="service"),
+    path("gallery", client_views.gallery, name="gallery"),
+    path("feedback1", client_views.feedback1, name="feedback1"),
+    path("contact", client_views.client_contact, name="client_contact"),
+    path("logout", client_views.client_logout, name="logout"),
+    path("villa/<int:id>", client_views.clientvilla),
+    path("villadetails/<int:id>", client_views.client_villaDetails),
+    path("search_product/", client_views.search, name="pro_search"),
+    path("insert_feedback/", client_views.insert_Feedback),
+    path("reg/", client_views.client_registrtion),
+    path("checkout/", client_views.Checkout),
+    path("booking/", client_views.client_Booking),
+    path("mbooking/", client_views.mybooking),
+    path("placeorder/", client_views.Booking_online),
+    path("bookSuccess/", client_views.bookSuccess),
+    path("larea/", client_views.load_area),
+    path("contact/", client_views.client_contact),
+]

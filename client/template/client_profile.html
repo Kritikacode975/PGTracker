@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<section class="page-header">
+    <div class="page-header__bg"></div>
+    <!-- /.page-header__bg -->
+    <div class="container">
+        <ul class="villoz-breadcrumb list-unstyled">
+            <li><a href="/client/client_index/">Home</a></li>
+            <li><span>Profile</span></li>
+        </ul><!-- /.thm-breadcrumb list-unstyled -->
+        <h2 class="page-header__title">Profile</h2>
+    </div><!-- /.container -->
+</section><!-- /.page-header -->
+<!-- Login Start -->
+<section class="login-page">
+    <div class="container">
+      
+            <form class="contact-one__form contact-form-validated form-one wow fadeInUp" method="post" action="/client/profile/">
+                {% csrf_token %}
+                <h2><u>USERS PROFILE</u></h2>
+              <table>
+                <tr>
+                <div class="form-one__control">
+                    <td><label><b>Name:</b></label></td>
+                    <td><input type="text" name="user_name" value="{{user.user_name}}" placeholder="Enter name"></td>
+                </div><!-- /.form-one__control -->
+            </tr>
+                
+                <div class="form-one__control">
+                    <input type="hidden"  name="dob" value="{{user.dob}}" placeholder="DOB">
+                </div><!-- /.form-one__control -->
+            <tr>
+                <div class="form-one__control">
+                    <td><label><b>Email:</b></label></td>
+                    <td><input type="email" name="email" value="{{user.email}}" placeholder="Email address"></td>
+                </div><!-- /.form-one__control -->
+            </tr>
+            <tr>
+                <div class="form-one__control">
+                    <td><label><b>Address:</b></label></td>
+                    <td><input type="text" name="address" value="{{user.address}}" placeholder="Enter Address"></td>
+                </div><!-- /.form-one__control -->
+            </tr>
+            <tr>
+                <div class="form-one__control">
+                    <td><label><b>Number:</b></label></td>
+                    <td><input type="number" name="contact" value="{{user.contact}}" placeholder=" Number"></td>
+                </div><!-- /.form-one__control -->
+            </tr>
+            <tr>
+                <div class="form-one__control">
+                    <input type="hidden" name="password" value="{{user.password}}" placeholder=" Number">
+                </div><!-- /.form-one__control -->
+            </tr>
+            <tr>
+                <div class="form-one__control">
+                    <td><label><b>Cities:</b></label></td>
+                    <td><select name="area_id" id="">
+                        {% for data in a%}
+                         <option value="{{data.area_id}}">{{data.area_name}}</option>
+                        {% endfor %}
+                    </select></td>
+                </div><!-- /.form-one__control -->
+                <div class="form-one__control">
+                    <input type="hidden" name="otp" value="{{user.otp}}" placeholder=" Number">
+                </div>
+                <div class="form-one__control">
+                    <input type="hidden" name="is_admin" value="{{user.is_admin}}" placeholder=" Number">
+                </div>
+                
+                <!-- /.form-one__control -->
+                <tr>
+                <div class="form-one_control form-one_control--full">
+                    <td><button type="submit" class="villoz-btn">
+                        <i>Submit</i>
+                        <span>Submit</span>
+                    </button></td>
+                </div><!-- /.form-one__control -->
+            </tr>
+              </table>
+            </form>
+    </div>
+</section>
+{% endblock %}

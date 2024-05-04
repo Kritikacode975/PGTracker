@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- {% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %} -->
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h4>Input Text</h4>
+              </div>
+              <form action="/insertuser/" method="post">
+                {% csrf_token %}
+              <div class="card-body">
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" name="user_name" class="form-control">
+                  <label>E-mail</label>
+                  <input type="text" name="email" class="form-control">
+                  <label>Password</label>
+                  <input type="text" name="password" class="form-control">
+                  <label>Contact</label>
+                  <input type="text" name="contact" class="form-control">
+                  <label>Address</label>
+                  <input type="text" name="address" class="form-control">
+                  <label>Area Id</label>
+                  <input type="text" name="area_id" class="form-control">
+                  <label>Date</label>
+                  <input type="text" name="dob" class="form-control">
+                  <label>OTP</label>
+                  <input type="text" name="password" class="form-control">
+                  <label>OTP_Used</label>
+                  <input type="text" name="otp_used" class="form-control">
+
+
+                </div>
+                <button type="submit">Insert</button>
+              </form> 
+                
+                
+                
+                
+                
+                
+              </div>
+            </div> 
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
+<!-- {%  endblock %} -->

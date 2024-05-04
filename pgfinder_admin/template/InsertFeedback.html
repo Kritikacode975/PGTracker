@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h4>Input Text</h4>
+              </div>
+              <form action="/insertfeedback/" method="post">
+                {% csrf_token %}
+              <div class="card-body">
+                <div class="form-group">
+                  <label>User Id</label>
+                  <input type="text" name="user_id" class="form-control">
+                  <label>PG Id</label>
+                  <input type="text" name="pg_id" class="form-control">
+                  <label>Feedback Date</label>
+                  <input type="text" name="f_date" class="form-control">
+                  <label>Description</label>
+                  <input type="text" name="des" class="form-control">
+                  <label>Rating</label>
+                  <input type="text" name="rating" class="form-control">
+                </div>
+                <button type="submit">Insert</button>
+              </form> 
+                
+                
+                
+                
+                
+                
+              </div>
+            </div> 
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
+{%  endblock %}

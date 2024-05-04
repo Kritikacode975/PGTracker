@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+
+
+<div class="main-content">
+    <section class="section">
+      <div class="section-body">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h4>Insert Room Gallary</h4>
+              </div>
+ <div class="card-body">
+              <form action="/insertpgroom_gallary/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+               
+                  <div class="form-group">
+                    <label>Image Pattern</label>
+                    <input type="file" name="image_patten" id="image_patten" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>PG Room Id</label>
+                    <select name="pg_room_id">
+                    {% for data in data %}
+                      <option value="{{data.pg_room_id}}">{{data.pg_room_id}}</option>
+                    {% endfor %}
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit">Insert Gallary</button>
+                  </div>
+                
+              </form>
+              </div> 
+              </div>
+            </div> 
+          </div>
+        </div>
+    </section>
+  </div>
+{%  endblock %}

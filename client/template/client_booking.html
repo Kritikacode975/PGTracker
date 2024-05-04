@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        
+   <section class="page-header page-header--blank">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+        </section><!-- /.page-header -->
+        
+        
+        
+        <section class="villa-details-three">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8">
+                        <div class="villa-details-sidebar">
+                            <div class="villa-details-sidebar__booking">
+                                <h4 class="villa-details-sidebar_booking_title">Book PG</h4>
+                                <!-- <form class="villa-details-sidebar__form contact-form-validated" action="https://bracketweb.com/villoz-html/inc/sendemail.php"> -->
+                                <form action="/client/booking/" method="post">
+                                        {% csrf_token %} 
+                                    <div class="villa-details-sidebar__control">
+                                        <label for="checkin">Booking Date</label>
+                                        <input type="date" name="b_date"  min='{{da|date:"Y-m-d"}}' id="date" >
+                                    </div><!-- /.form__control -->
+                                    <div class="villa-details-sidebar__control">
+                                        <label for="guests">PG Name</label>
+                                        <select name="pg_room_id" id="">
+                                        {% for data in p %}
+                                        <option value="{{data.pg_room_id}}">{{data.pg_id.pg_name}}</option>
+                                        <!-- <select name="{{data.pg_room_id.}}" class="selectpicker" id="guests">
+                                            <option value="select">0</option>
+                                            <option value="spain">1</option>
+                                            <option value="africa">2</option>
+                                            <option value="europe">3</option>
+                                            <option value="thailand">4</option>
+                                            <option value="dubai">5</option>
+                                        </select> -->
+                                        {% endfor %}
+                                    </select>
+                                    </div>
+                                    <!-- <div class="villa-details-sidebar__control">
+                                        <label for="guests">Add Extra</label>
+                                        <ul class="villa-details-sidebar__checkbox">
+                                            <li>
+                                                <input type="checkbox" name="select01" id="select01">
+                                                <label for="select01">Select per Person<span>$20</span></label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="select02" id="select02">
+                                                <label for="select02">Select per Booking<span>$20</span></label>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                   
+                                    <button type="submit" class="villoz-btn">
+                                        <i>Book Now</i>
+                                        <span>Book Now</span>
+                                    </button>
+                                </form>
+                                <div class="result"></div><!-- /.result -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- /.page-wrapper -->
+
+
+
+{% endblock %}

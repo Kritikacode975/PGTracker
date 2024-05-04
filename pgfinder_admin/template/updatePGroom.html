@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'admin_headerfoter.html' %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<div class="main-content">
+    <section class="section">
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Input Text</h4>
+                        </div>
+                        <form action="/updatePGroom/{{data.pg_room_id}}" method="post">
+                            {% csrf_token %}
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>Room Id</label>
+                                    <select name="r_id">
+                                {% for data in d %}
+                                    <option value="{{data.r_id}}">{{data.r_name}}</option>
+                                {% endfor %}
+                                </select><br>
+                                    <label>PG Id</label>
+                                    <select name="pg_id">
+                                {% for data in data %}
+                                    <option value="{{data.pg_id}}">{{data.pg_id}}</option>
+                                {% endfor %}
+                                    </select><br>
+                                    <label>No_of_room</label>
+                                    <input type="text" name="no_of_room" value="{{data.no_of_room}}" class="form-control">
+                                    <label>changes</label>
+                                    <input type="text" name="changes" value="{{data.changes}}" class="form-control">
+                                </div>
+                                <button type="submit">Insert</button>
+                        </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</div>
+</section>
+
+</div>
+</body>
+
+</html>
+{% endblock %}

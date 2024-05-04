@@ -1,0 +1,252 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content  %}
+        
+        
+        
+        <section class="page-header page-header--blank">
+            <div class="page-header__bg"></div>
+            <!-- /.page-header__bg -->
+        </section><!-- /.page-header -->
+        <section class="villa-details-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-5">
+                   
+                        <div class="villa-details-one__info">
+                            <p class="villa-details-one__address">{{pgdetail.location}}</p>
+                            <h3 class="villa-details-one__title">{{pgdetail.pg_name}}</h3>
+                            <div class="villa-details-one__price-wrap">
+                                <div class="villa-details-one__price"><span class="villa-details-one__price__disable"></span>{{pgdetail.pg_price}} <span class="villa-details-one__price__shift"></span></div>
+                                <div class="villa-details-one__flash">
+                                    <p class="villa-details-one__flash__label off">10% Off</p>
+                                </div>
+                            </div>
+                        </div>
+                                       </div>
+                    {% comment %} <div class="col-lg-8 col-xl-7"> {% endcomment %}
+                        {% comment %} <div class="villa-details-one__meta"> {% endcomment %}
+                            {% comment %} <div class="villa-details-one__meta__item"> {% endcomment %}
+                                {% comment %} <div class="villa-details-one__meta__icon"><span class="icon-bed"></span></div> {% endcomment %}
+                                {% comment %} <h5 class="villa-details-one__meta__number">3</h5> {% endcomment %}
+                                {% comment %} <p class="villa-details-one__meta__name">Bedrooms</p> {% endcomment %}
+                            {% comment %} </div><!-- meta-item --> {% endcomment %}
+                            {% comment %} <div class="villa-details-one__meta__item"> {% endcomment %}
+                                {% comment %} <div class="villa-details-one__meta__icon"><span class="icon-bath"></span></div> {% endcomment %}
+                                {% comment %} <h5 class="villa-details-one__meta__number">2</h5> {% endcomment %}
+                                {% comment %} <p class="villa-details-one__meta__name">Bathrooms</p> {% endcomment %}
+                            {% comment %} </div><!-- meta-item --> {% endcomment %}
+                            {% comment %} <div class="villa-details-one__meta__item"> {% endcomment %}
+                                {% comment %} <div class="villa-details-one__meta__icon"><span class="icon-guests"></span></div> {% endcomment %}
+                                {% comment %} <h5 class="villa-details-one__meta__number">12</h5> {% endcomment %}
+                                {% comment %} <p class="villa-details-one__meta__name">Guests</p> {% endcomment %}
+                            {% comment %} </div><!-- meta-item --> {% endcomment %}
+                            {% comment %} <div class="villa-details-one__meta__item"> {% endcomment %}
+                                {% comment %} <div class="villa-details-one__meta__icon"><span class="icon-square-measument"></span></div> {% endcomment %}
+                                {% comment %} <h5 class="villa-details-one__meta__number">460</h5> {% endcomment %}
+                                {% comment %} <p class="villa-details-one__meta__name">Sqft Size</p> {% endcomment %}
+                            {% comment %} </div><!-- meta-item --> {% endcomment %}
+                        {% comment %} </div> {% endcomment %}
+                    {% comment %} </div> {% endcomment %}
+                </div>
+            </div>
+        </section>
+
+       <section class="villa-details-gallery">
+            <div class="villa-details-gallery__carousel villoz-owl__carousel owl-carousel owl-theme" data-owl-options='{
+        "items": 4,
+        "margin": 10,
+        "loop": true,
+        "smartSpeed": 700,
+        "autoWidth": true,
+        "autoplayTimeout": 6000, 
+        "nav": true,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+        "dots": false,
+        "autoplay": true,
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "575": {
+                "items": 2
+            },
+            "768": {
+                "items": 3
+            },
+            "992": {
+                "items": 4
+            }
+        }
+        }'>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail6.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail5.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail3.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail4.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail5.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail6.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail7.png' %}" alt="villoz"></div>
+                </div>
+                <div class="item">
+                    <div class="villa-details-gallery__item"><img src="{% static '/assets/img/detail8.png' %}" alt="villoz"></div>
+                </div>
+            </div>
+            <div class="villa-details-gallery__btns">
+                <a class="villoz-image-popup" href="#" data-gallery-options='{
+            "items": [
+              {
+                "src": "assets/images/villa/villa-d-1-1.jpg"
+              },
+              {
+                "src": "assets/images/villa/villa-d-1-2.jpg"
+              },
+              {
+                "src": "assets/images/villa/villa-d-1-3.jpg"
+              },
+              {
+                "src": "assets/images/villa/villa-d-1-4.jpg"
+              }
+            ],
+            "gallery": {
+              "enabled": true
+            },
+            "type": "image"
+        }'></a>
+            </div>
+        </section>
+        <section class="villa-details-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="villa-details-three__content">
+                            <h4 class="villa-details-three__content__title">Overview</h4>
+                            <p class="villa-details-three__content__text">
+                                Paying guest accommodations, commonly referred to as PGs, are residential arrangements where individuals rent rooms or shared spaces within a private home or dedicated facility. In exchange for rent, residents receive lodging along with certain amenities and services.PG accommodations come in various types, including single-room PGs, shared-room PGs, gender-specific PGs, working professional PGs, student PGs.
+                            </p>
+                            <p class="villa-details-three__content__text">
+                                PG accommodations are often found in urban centers, near educational institutions, job hubs, medical centers, transportation hubs, and tourist destinations. The availability of PGs in specific locations depends on factors like demand and proximity to amenities.
+                            </p>
+                            <div class="villa-details-three__content__divider"></div>
+                            <h4 class="villa-details-three__content__title">Amenities</h4>
+                            <ul class="villa-details-three__lists">
+                                <li><span class="fas fa-check"></span>Furnished Rooms</li>
+                                <li><span class="fas fa-check"></span>Attached Bathroom</li>
+                                <li><span class="fas fa-check"></span>Wi-Fi Internet Access</li>
+                                <li><span class="fas fa-check"></span>Electricity and Water Supply</li>
+                                <li><span class="fas fa-check"></span>MHousekeeping Services</li>
+                                <li><span class="fas fa-check"></span>Laundry Facilities</li>
+                                <li><span class="fas fa-check"></span>Security Features</li>
+                                <li><span class="fas fa-check"></span>Common Areas</li>
+                                <li><span class="fas fa-check"></span>Recreational Facilities</li>
+                                <li><span class="fas fa-check"></span>Meals</li>
+                                <li><span class="fas fa-check"></span>Conditioning</li>
+                                <li><span class="fas fa-check"></span>Parking</li>
+                                {% comment %} <li><span class="fas fa-times"></span>Laundry</li> {% endcomment %}
+                                {% comment %} <li><span class="fas fa-check"></span>Swimming Pool</li> {% endcomment %}
+                            </ul>
+                             {% for data in fed %}
+                            <div class="villa-details-three__comment">
+                                <div class="villa-details-three__comment__author">
+                                    {% comment %} <div class="villa-details-three__comment__image"><img src="assets/img/team-1-1.jpg" alt="villoz"></div> {% endcomment %}
+                                    <h5 class="villa-details-three__comment__name">{{data.user_id.user_name}}</h5>
+                                    <span class="villa-details-three__comment__date">{{data.f_date}}</span>
+                                </div>    
+                                <p class="villa-details-three__comment__text">
+                                    {{data.des}}
+                                </p>
+                                <ul class="villa-details-three__comment__list">
+                                    <li>
+                                        Conditioning
+                                        <div class="villa-details-three__comment__list__ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Food
+                                        <div class="villa-details-three__comment__list__ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Location
+                                        <div class="villa-details-three__comment__list__ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        WiFi
+                                        <div class="villa-details-three__comment__list__ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                            <h4 class="villa-details-three_content_title mb32">Write a Review</h4>
+                               <div class="row">
+                                    <div class="col-md-9">
+                                        <form action="/client/insert_feedback/" method="post">
+                                            {% csrf_token %}
+                                       
+                                            <div class="villa-details-three_form_control">
+                                            <input type="hidden" name="pg_id"  value="{{pgdetail.pg_id}}" placeholder="PG Name">
+                                            </div>
+            
+                                            <div class="villa-details-three_form_control">
+                                                  <input type="radio" name="rating" value="5"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                                <br>  <input type="radio" name="rating" value="4"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>
+                                                <br>  <input type="radio" name="rating" value="3"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>
+                                                <br>  <input type="radio" name="rating" value="2"> <i class="fa fa-star"></i><i class="fa fa-star"></i></i>
+                                                <br>  <input type="radio" name="rating" value="1"> <i class="fa fa-star"></i>
+                                                <br>     
+
+                                               <div  class="villa-details-three_form_control">
+                                                 <textarea name="des" cols="100" rows="5"></textarea>
+                                               </div>
+                                                    <br>
+                                                <button type="submit" class="villoz-btn villoz-btn--base">
+                                                <i>Submit a Review</i><span>Submit a Review</span>
+                                                </button>
+                                            </div>
+                                       </form>
+                                    </div>
+                                    
+                                </div>
+
+
+
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+{% endblock %}       
